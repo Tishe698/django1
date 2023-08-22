@@ -10,7 +10,8 @@ SECRET_KEY = 'ranRPgXKERQRhyEHmCJfIbRSxAOeBEbvuZFKgvmUzYvnXcKzBi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ditedideb.beget.app', 'www.ditedideb.beget.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['pixelpulsetech.ru', 'www.pixelpulsetech.ru', 'localhost', '127.0.0.1']
+
 
 # Application definition
 
