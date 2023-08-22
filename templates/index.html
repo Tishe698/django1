@@ -1,0 +1,101 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>PixelPulse Tech</title>
+</head>
+<body>
+<div class="section1">
+    <div class="conteiner_section1">
+        <header>
+            <nav class="close" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Преимущества</li>
+                        </a>
+                        <a href="#">
+                            <li>Цены</li>
+                        </a>
+                        <a href="#">
+                            <li>Этапы работы</li>
+                        </a>
+                        <a href="#">
+                            <li>Заказать сайт</li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="telefon_znachok">
+                                <img src="{% static 'img/звонок.png' %}" alt="">
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="open">
+                <div class="header_open">
+                    <div class="foto">
+                        <img src="{% static 'img/logo 1.png ' %}" alt="">
+                    </div>
+                    <div class="links">
+                        <div class="preimshestvo">
+                            Преимущества
+                        </div>
+                        <div class="cena">
+                            Цены
+                        </div>
+                        <div class="etapy">
+                            Этапы работы
+                        </div>
+                    </div>
+                    <div class="links2">
+                        <div class="zakaz_sait">
+                            Заказать сайт
+                        </div>
+                        <div class="telefon_znachok">
+                            <img src="{% static 'img/звонок.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="block1">
+            <div class="zagolovok_block">
+                <div class="zapolnity_form">
+                    Заполните форму и получите персональное предложение со скидкой до 20%
+                </div>
+                <div class="zakazat_sait">
+                    Заказать сайт под ключ от 20 000 рублей
+                </div>
+                <div class="razrabotka">
+                    Разработка современных сайтов под ключ для вашего бизнеса с высокой конверсией от 14 рабочих
+                    дней
+                </div>
+                <div class="knopka2">
+                    <div class="zakazat_knopka">
+                        Заказать сайт
+                    </div>
+                    <div class="poluchi_podarok">
+                        Базовая оптимизация и домен в подарок
+                    </div>
+                </div>
+                <div class="kompyter"></div>
+            </div>
+            <div class="vector"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

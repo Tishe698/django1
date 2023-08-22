@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner_section1 {
+    height: 100vh;
+    width: 73.671%;
+    margin: 0 auto;
+}
+
+.section1 {
+    background: linear-gradient(180deg, #E2EAF2 36.77%, #FFF 79.69%);
+}
+
+
+.foto {
+    width: 10vw;
+}
+
+.foto img {
+    background-position: center;
+    width: 10vw;
+    background-size: contain;
+
+}
+
+.links {
+    display: flex;
+    line-height: 4.5vw;
+    gap: 3.3vw;
+    font-size: 1.25vw;
+}
+
+.links2 {
+    display: flex;
+    width: 18%;
+    justify-content: flex-end;
+    font-size: 0.92vw;
+    gap: 2vw;
+}
+
+.telefon_znachok {
+    display: flex;
+    align-items: center;
+}
+
+.telefon_znachok img {
+    width: 2vw;
+    height: 2vw;
+}
+
+.zakaz_sait {
+    background: #2E363E;
+    color: white;
+    border-radius: 6vw;
+    height: 3vw;
+    width: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.close {
+    display: none;
+}
+
+.open {
+
+    display: block;
+}
+
+.header_open {
+    height: 19.37413vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12vw;
+}
+
+
+/*навбар мобил*/
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 2%;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #676666;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu {
+    position: fixed;
+    /* Изменили на fixed */
+    width: 300px;
+    top: 0;
+    /* Позиционируем меню по верху */
+    right: -300px;
+    /* Сдвигаем за пределы экрана */
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 100% 0%;
+    transform: translate(0, 0);
+    /* Изменили смещение на 0 */
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul {
+    transform: translate(-300px, 0);
+    /* Изменили смещение на -300px */
+}
+
+/*
+  КОНЕЦ НАВБАРА */
+
+.zagolovok_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    position: relative;
+}
+
+.block1 {
+    margin-top: 5%;
+}
+
+.zapolnity_form {
+    display: flex;
+    height: 2.3125vw;
+    padding: 0.625vw 1.125vw;
+    align-items: center;
+    gap: 0.625vw;
+    border-radius: 0.6875vw;
+    background: #F2F6FA;
+    color: #2E363E;
+    font-family: Montserrat;
+    font-size: 0.6875vw;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0.06875vw;
+    text-transform: uppercase;
+}
+
+.zakazat_sait {
+    width: 39.0625vw;
+    color: #2E363E;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Заголовки / 48px, Bold */
+    font-family: Montserrat;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75vw;
+    /* 125% */
+    letter-spacing: -0.0625vw;
+}
+
+.razrabotka {
+    width: 34vw;
+    color: #434B53;
+    font-family: Montserrat;
+    font-size: 1.3125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: -0.0125vw;
+}
+
+.zakazat_knopka {
+    display: flex;
+    padding: 1.875vw 3.125vw;
+    align-items: center;
+    gap: 0.625vw;
+    border-radius: 0.5vw;
+    background: #2E363E;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.125vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 152%;
+    /* 1.71rem */
+}
+
+.knopka2 {
+    display: flex;
+    align-items: center;
+    gap: 1.25vw;
+}
+
+.poluchi_podarok {
+    width: 13.125vw;
+    color: #434B53;
+    font-family: Montserrat;
+    font-size: 0.875vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.kompyter {
+    position: absolute;
+    top: 0%;
+    left: 33%;
+    background: url('../img/компьютер.png') no-repeat;
+    mix-blend-mode: darken;
+    background-position: center;
+    background-size: contain;
+    width: 49vw;
+    height: 31vw;
+}
+
+.vector {
+    background: url('../img/Vector1.png') no-repeat;
+    width: 3vw;
+    height: 2vw;
+    mix-blend-mode: darken;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+
+
+    .conteiner_section1 {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .links {
+        gap: 6.3vw;
+        font-size: 2vw;
+    }
+
+    .header_open {
+        margin-left: 4%;
+    }
+
+    .zakaz_sait {
+        height: 4vw;
+        width: 11vw;
+        font-size: 1.2vw;
+    }
+
+    .telefon_znachok img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .zapolnity_form {
+        height: 4.3125vw;
+        font-size: 1.2vw;
+        margin-left: 13%;
+    }
+
+    .zakazat_sait {
+        width: 59.0625vw;
+        font-size: 5vw;
+        line-height: 6vw;
+        margin-left: 13%;
+        margin-top: 2%;
+    }
+
+    .razrabotka {
+        width: 29vw;
+        font-size: 2.125vw;
+        margin-left: 13%;
+        margin-top: 0%;
+    }
+
+    .knopka2 {
+        gap: 3.25vw;
+        margin-left: 13%;
+        margin-top: 3%;
+    }
+
+    .poluchi_podarok {
+        font-size: 1vw;
+    }
+
+    .kompyter {
+        left: 36%;
+        width: 55vw;
+        top: 36%;
+        height: 32vw;
+    }
+
+    .block1 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .close {
+        display: block;
+    }
+
+    .open {
+        display: none;
+    }
+
+}
+
+@media (min-width: 280px) and (max-width: 425px) {
+    #menuToggle {
+        top: 20px;
+    }
+
+    .zapolnity_form {
+        height: 11.3125vw;
+        font-size: 2.5vw;
+        margin-left: 7%;
+        margin-top: 20%;
+        width: 87vw;
+        letter-spacing: 0.2vw;
+    }
+
+    .zagolovok_block {
+        gap: 5.5vw;
+        position: relative;
+    }
+
+    .zakazat_sait {
+        width: 77.0625vw;
+        font-size: 6vw;
+        line-height: 9vw;
+        margin-left: 11%;
+        margin-top: 0%;
+        letter-spacing: 0.3vw;
+    }
+
+    .kompyter {
+        left: 27%;
+        width: 63vw;
+        top: 35%;
+        height: 41vw;
+    }
+
+    .razrabotka {
+        width: 62vw;
+        font-size: 5.5vw;
+        margin-left: 13%;
+        margin-top: 28%;
+    }
+
+    .knopka2 {
+        gap: 3.25vw;
+        margin-left: 7%;
+        margin-top: 3%;
+    }
+
+    .zakazat_knopka {
+        padding: 1.875vw 3.125vw;
+        gap: 0.625vw;
+        font-size: 4.125vw;
+        line-height: 152%;
+    }
+
+    .poluchi_podarok {
+        font-size: 4vw;
+        width: 47vw;
+    }
+}
+
