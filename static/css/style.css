@@ -112,7 +112,7 @@ body {
 
 #menuToggle a {
     text-decoration: none;
-    color: #232323;
+    color: #FFFFFF;
 
     transition: color 0.3s ease;
 }
@@ -177,7 +177,7 @@ body {
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: white;
 }
 
 /*
@@ -202,13 +202,14 @@ body {
 #menu {
     position: fixed;
     /* Изменили на fixed */
-    width: 300px;
+    width: 226px;
+    height: 319px;
     top: 0;
     /* Позиционируем меню по верху */
     right: -300px;
     /* Сдвигаем за пределы экрана */
-    padding: 50px;
-    padding-top: 125px;
+    padding: 30px;
+    padding-top: 76px;
 
     background: #ededed;
     list-style-type: none;
@@ -217,16 +218,34 @@ body {
     transform-origin: 100% 0%;
     transform: translate(0, 0);
     /* Изменили смещение на 0 */
-
+    border-radius: 0.625rem 0 0 0.625rem;
+    background: rgba(0, 0, 0, 0.76);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 
 #menu li {
-    padding: 10px 0;
-    font-size: 22px;
+    padding: 16px 0;
+
 }
 
+.zakaz_sait_burger {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    align-items: center;
+    width: 94px;
+    margin-top: 21px;
+}
+.burger_tel_znachjok {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
 /*
   * And let's slide it in from the left
   */
@@ -585,9 +604,9 @@ body {
 }
 
 #menuToggle span {
-    width: 29px;
+    width: 24px;
     height: 4px;
-    transform-origin: 1px 0px;
+    transform-origin: -5px 2px;
 }
 
 #menuToggle {
