@@ -318,7 +318,7 @@ body {
     padding: 1.875vw 3.125vw;
     align-items: center;
     gap: 0.625vw;
-    border-radius: 0.5vw;
+    border-radius: 1.5vw;
     background: #2E363E;
     color: #FFF;
     text-align: center;
@@ -333,7 +333,8 @@ body {
 .knopka2 {
     display: flex;
     align-items: center;
-    gap: 1.25vw;
+    gap: 2.25vw;
+    width: 61vw;
 }
 
 .poluchi_podarok {
@@ -576,7 +577,7 @@ body {
 
     .knopka2 {
         gap: 1.25vw;
-        margin-left: 3%;
+        margin-left: 0%;
     }
 
     .zakazat_knopka {
