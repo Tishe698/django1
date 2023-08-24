@@ -346,10 +346,10 @@ body {
     background-size: contain;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: 19%;
+    margin-top: 11%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
     .close {
         display: block;
     }
@@ -363,19 +363,31 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px ) {
+@media (min-width: 768px) and (max-width: 1024px ) {
+    .conteiner_section1 {
+        width: 85.671%;
+    }
 
     #menuToggle {
         top: 20px;
     }
 
+    .links {
+        font-size: 2.25vw;
+    }
+
+    .header_open {
+        gap: 10vw;
+        height: 14.37413vh;
+    }
+
     .zapolnity_form {
         height: 7.3125vw;
         font-size: 2vw;
-        margin-left: 8%;
-        margin-top: 9%;
-        width: 75vw;
-        letter-spacing: 0.2vw;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 73vw;
+        letter-spacing: 3px;
     }
 
     .zagolovok_block {
@@ -387,45 +399,57 @@ body {
         width: 56.0625vw;
         font-size: 5vw;
         line-height: 6vw;
-        margin-left: 11%;
-        margin-top: 0%;
-        /* letter-spacing: 0.0vw; */
+        margin-left: 0%;
+        margin-top: 8%;
+        letter-spacing: 0.0vw;
     }
 
     .kompyter {
-        left: 43%;
+        left: 34%;
         width: 40vw;
-        top: 32%;
+        top: 33%;
         height: 32vw;
     }
 
+    .kompyter img {
+        object-fit: contain;
+        width: 59vw;
+    }
+
     .razrabotka {
-        width: 62vw;
-        font-size: 2.5vw;
-        margin-left: 11%;
-        margin-top: 18%;
+        width: 32vw;
+        font-size: 2.8vw;
+        margin-left: 0%;
+        margin-top: 12%;
     }
 
     .knopka2 {
         gap: 3.25vw;
-        margin-left: 11%;
+        margin-left: 0%;
+        margin-top: 15%;
     }
 
     .zakazat_knopka {
         padding: 1.875vw 3.125vw;
         gap: 0.625vw;
-        font-size: 2.125vw;
+        font-size: 2.45vw;
         line-height: 152%;
     }
 
     .poluchi_podarok {
-        font-size: 2.5vw;
+        font-size: 2.1vw;
         width: 35vw;
+    }
+
+    .vector {
+        width: 8vw;
+        height: 5vw;
+        margin-top: 4%;
     }
 }
 
 
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 550px) and (max-width: 767px) {
     #menuToggle {
         top: 20px;
     }
