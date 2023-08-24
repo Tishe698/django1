@@ -241,11 +241,13 @@ body {
     width: 104px;
     margin-top: 21px;
 }
+
 .burger_tel_znachjok {
     position: absolute;
     top: 16px;
     left: 16px;
 }
+
 /*
   * And let's slide it in from the left
   */
@@ -476,7 +478,7 @@ body {
     .zapolnity_form {
         height: 7.3125vw;
         font-size: 2vw;
-        margin-left: 8%;
+        margin-left: 0%;
         margin-top: 9%;
         width: 75vw;
         letter-spacing: 0.2vw;
@@ -491,7 +493,7 @@ body {
         width: 56.0625vw;
         font-size: 5vw;
         line-height: 6vw;
-        margin-left: 11%;
+        margin-left: 0%;
         margin-top: 0%;
         letter-spacing: 0.0vw;
     }
@@ -511,7 +513,7 @@ body {
     .razrabotka {
         width: 65vw;
         font-size: 2.8vw;
-        margin-left: 11%;
+        margin-left: 0%;
         margin-top: 18%;
     }
 
@@ -546,45 +548,45 @@ body {
     }
 
     .zakazat_sait {
-        width: 85.0625vw;
-        font-size: 8vw;
+        width: 87.0625vw;
+        font-size: 7vw;
         line-height: 12vw;
-        margin-left: 4%;
+        /* margin-left: 4%; */
         margin-top: 0%;
+        letter-spacing: 0.4vw;
     }
 
     .razrabotka {
         width: 83vw;
         font-size: 5vw;
-        margin-left: 4%;
+        margin-left: 0%;
         margin-top: 37%;
         line-height: 8vw;
     }
 
     .kompyter {
-        left: 34%;
+        left: 29%;
         top: 39%;
     }
 
     .kompyter img {
         object-fit: contain;
-        width: 57vw;
+        width: 60vw;
     }
 
     .knopka2 {
         gap: 1.25vw;
-        margin-left: 1%;
+        margin-left: 3%;
     }
 
     .zakazat_knopka {
         padding: 1.875vw 3.125vw;
-        /* gap: 1.625vw; */
-        font-size: 4.6vw;
+        font-size: 2.6vw;
     }
 
     .poluchi_podarok {
-        font-size: 3.5vw;
-        width: 44vw;
+        font-size: 2.5vw;
+        width: 32vw;
     }
 
 
@@ -636,7 +638,7 @@ body {
         width: 77.0625vw;
         font-size: 6vw;
         line-height: 9vw;
-        margin-left: 4%;
+        margin-left: 0%;
         margin-top: 0%;
         letter-spacing: 0.3vw;
     }
@@ -651,13 +653,13 @@ body {
     .razrabotka {
         width: 62vw;
         font-size: 5.5vw;
-        margin-left: 4%;
+        margin-left: 0%;
         margin-top: 28%;
     }
 
     .knopka2 {
         gap: 3.25vw;
-        margin-left: 4%;
+        margin-left: 0%;
         margin-top: 3%;
     }
 
