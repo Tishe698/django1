@@ -30,7 +30,7 @@
     display: flex;
     line-height: 4.5vw;
     gap: 3.3vw;
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 .links2 {
@@ -78,6 +78,7 @@
     display: flex;
     align-items: center;
     gap: 12vw;
+    font-family: Montserrat;
 }
 
 
@@ -341,6 +342,7 @@ body {
     align-items: center;
     gap: 2.25vw;
     width: 61vw;
+    margin-top: 2%;
 }
 
 .poluchi_podarok {
@@ -446,6 +448,22 @@ body {
         margin-bottom: 10%;
     }
 }
+@media (min-width: 1807px) and (max-width: 2362px ) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(427px, 1fr));
+    }
+}
+@media (min-width: 1371px) and (max-width: 1807px ) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1370px ) {
+    .container {
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+}
+}
 
 @media (min-width: 768px) and (max-width: 1024px ) {
     .conteiner_section1 {
@@ -457,11 +475,11 @@ body {
     }
 
     .links {
-        font-size: 2.25vw;
+        font-size: 1.2vw;
     }
 
     .header_open {
-        gap: 7vw;
+        gap: 12vw;
         height: 14.37413vh;
     }
 
@@ -501,7 +519,7 @@ body {
     }
 
     .razrabotka {
-        width: 32vw;
+        width: 31vw;
         font-size: 2.4vw;
         margin-left: 0%;
         margin-top: 0%;
@@ -646,7 +664,7 @@ body {
 
     .zapolnity_form {
         height: 11.3125vw;
-        font-size: 3vw;
+        font-size: 2.2vw;
         margin: 0 auto;
         width: 89vw;
     }
