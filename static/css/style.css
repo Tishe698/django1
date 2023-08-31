@@ -6,6 +6,7 @@
 
 .conteiner_section1 {
     width: 73.671%;
+    height: 100vh;
     margin: 0 auto;
     margin-bottom: 18%;
 }
@@ -369,14 +370,14 @@ body {
 
 .vector {
     background: url(../img/Vector1.png) no-repeat;
-    width: 5vw;
-    height: 4vw;
+    height: 8vw;
     mix-blend-mode: darken;
     background-position: center;
     background-size: contain;
     cursor: pointer;
-    margin: 0 auto;
-    margin-top: 11%;
+    position: fixed;
+    bottom: 0;
+    right: 45%;
 }
 
 /*
@@ -445,6 +446,7 @@ body {
 
     .conteiner_section1 {
         width: 85.671%;
+        height: 100vh;
         margin-bottom: 10%;
     }
 }
