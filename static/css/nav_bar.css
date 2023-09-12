@@ -1,0 +1,262 @@
+/*навбар мобил*/
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+header {
+    background: #3E3E3E;
+    margin: 0;
+    padding: 0;
+}
+
+
+.foto img {
+    background-position: center;
+    width: 85px;
+    background-size: contain;
+
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 2%;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #676666;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu {
+    position: fixed;
+    /* Изменили на fixed */
+    width: 226px;
+    height: 319px;
+    top: 0;
+    /* Позиционируем меню по верху */
+    right: -300px;
+    /* Сдвигаем за пределы экрана */
+    padding: 30px;
+    padding-top: 76px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 100% 0%;
+    transform: translate(0, 0);
+    /* Изменили смещение на 0 */
+    border-radius: 0.625rem 0 0 0.625rem;
+    background: rgba(0, 0, 0, 0.76);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+
+#menu li {
+    padding: 16px 0;
+
+}
+
+.zakaz_sait_burger {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    align-items: center;
+    width: 104px;
+    margin-top: 21px;
+}
+
+.burger_tel_znachjok {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul {
+    transform: translate(-300px, 0);
+    /* Изменили смещение на -300px */
+}
+
+.logo {
+    padding-left: 5px;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 50px;
+    margin-top: 2%;
+}
+
+.links {
+    display: flex;
+    line-height: 4.5vw;
+    gap: 6.3vw;
+    color: white;
+    font-size: 12px;
+}
+
+.links2 {
+    display: flex;
+    width: 180px;
+    justify-content: flex-end;
+    font-size: 10px;
+    gap: 2vw;
+}
+
+.telefon_znachok {
+    display: flex;
+    align-items: center;
+}
+
+.telefon_znachok img {
+    width: 35px;
+    height: 35px;
+}
+
+.zakaz_sait {
+    background: white;
+    color: black;
+    border-radius: 6vw;
+    height: 41px;
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.close {
+    display: none;
+}
+
+.open {
+
+    display: block;
+}
+
+.header_open {
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12vw;
+    font-family: Montserrat;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .close {
+        display: flex;
+        height: 72px;
+        align-items: center;
+    }
+
+    .open {
+        display: none;
+    }
+}

@@ -12,155 +12,102 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>PixelPulse Tech</title>
 </head>
+{% include 'header.html' %}
 <body>
 <div class="section1">
     <div class="conteiner_section1">
-        <header>
-            <nav class="close" role="navigation">
-                <div class="logo"><img src="{% static 'img/logotip.png' %}" alt=""></div>
-                <div id="menuToggle">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a href="#" target="_blank">
-                            <div class="burger_tel_znachjok">
-                                <img src="{% static 'img/3. Круг, заливка, большая.png' %}" alt="">
-                            </div>
-                        </a>
-                        <a href="#">
-                            <li class="lishki">Преимущества</li>
-                        </a>
-                        <a href="#">
-                            <li class="lishki">Цены</li>
-                        </a>
-                        <a href="#">
-                            <li class="lishki">Этапы работы</li>
-                        </a>
-                        <a href="#">
-                            <li class="zakaz_sait_burger">Заказать сайт</li>
-                        </a>
-                    </ul>
+        <div class="block_sozdaem_saity">
+            <div class="sozdaem_saity_kluch">
+                Создаём сайты под ключ
+            </div>
+            <div class="block_babki">
+                <div class="dengi">От 20 000 ₽</div>
+                <div class="kvadrat_dingi"></div>
+            </div>
+            <div class="razrabotka_sovrem_saitov">
+                Разработка современных сайтов под ключ для вашего бизнеса от 14 рабочих дней
+            </div>
+            <div class="zopolnity_formy_kartinka_block">
+                <div class="zopolnity_formy_kartinka">
+                    <img src="{% static 'img/Портрет 3 1.png' %}" alt="">
                 </div>
-            </nav>
-            <div class="open">
-                <div class="header_open">
-                    <div class="foto">
-                        <img src="{% static 'img/logotip.png' %}" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="preimshestvo">
-                            Преимущества
-                        </div>
-                        <div class="cena">
-                            Цены
-                        </div>
-                        <div class="etapy">
-                            Этапы работы
-                        </div>
-                    </div>
-                    <div class="links2">
-                        <div class="zakaz_sait">
-                            Заказать сайт
-                        </div>
-                        <div class="telefon_znachok">
-                            <img src="{% static 'img/звонок.png' %}" alt="">
-                        </div>
-                    </div>
+                <div class="zapolnity_formy">
+                    Заполните форму прямо сейчас и получите уникальное предложение
                 </div>
             </div>
-        </header>
-        <div class="block1">
-            <div class="zagolovok_block">
-                <div class="zapolnity_form">
-                    Заполните форму и получите персональное предложение со скидкой до 20%
+            <div class="zapolny_formy_block">
+                <div class="zapolnyt_formy">
+                    Заполнить форму
                 </div>
-                <div class="zakazat_sait">
-                    Заказать сайт под ключ от 20 000 рублей
-                </div>
-                <div class="razrabotka">
-                    Разработка современных сайтов под ключ для вашего бизнеса с высокой конверсией от 14 рабочих
-                    дней
-                </div>
-                <div class="knopka2">
-                    <div class="zakazat_knopka">
-                        Заказать сайт
-                    </div>
-                    <div class="poluchi_podarok">
-                        Базовая оптимизация и домен в подарок
-                    </div>
-                </div>
-                <div class="kompyter">
-                    <img src="{% static 'img/компьютер-PhotoRoom.png-PhotoRoom.png' %}" alt="">
+                <div class="bazovay_adaptacia">
+                    Базовая адаптация и домен в подарок
                 </div>
             </div>
         </div>
-        <img class="vector" src="{% static 'img/Vector1.png' %}" alt="">
     </div>
 </div>
-    <div class="conteiner_section2">
-        <div class="preimyshestvo">Преимущества работы с нами</div>
-        <div class="container">
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/1 картинка.gif' %}" alt="">
-                <div class="absol_proz">
-                    Абсолютная прозрачность
-                </div>
-                <div class="text2">
-                    Приглашаем вас окунуться в наш творческий процесс, обеспечивая открытый доступ ко всем материалам на
-                    каждом этапе разработки.
-                </div>
+<div class="conteiner_section2">
+    <div class="preimyshestvo">Преимущества работы с нами</div>
+    <div class="container">
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/1 картинка.gif' %}" alt="">
+            <div class="absol_proz">
+                Абсолютная прозрачность
             </div>
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/2 картин.gif' %}" alt="">
-                <div class="absol_proz">
-                    Оперативная реакция
-                </div>
-                <div class="text2">
-                    Ваши запросы не остаются без ответа, а работы выполняются в сжатые сроки.
-                </div>
+            <div class="text2">
+                Приглашаем вас окунуться в наш творческий процесс, обеспечивая открытый доступ ко всем материалам на
+                каждом этапе разработки.
             </div>
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/3.gif' %}" alt="">
-                <div class="absol_proz">
-                    Управление контентом
-                </div>
-                <div class="text2">
-                     Наш интуитивно понятный интерфейс позволяет вам легко обновлять контент самостоятельно, поддерживая
-                    актуальность информации.
-                </div>
+        </div>
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/2 картин.gif' %}" alt="">
+            <div class="absol_proz">
+                Оперативная реакция
             </div>
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/4.gif' %}" alt="">
-                <div class="absol_proz">
-                    Забота до конца
-                </div>
-                <div class="text2">
-                    Мы берем на себя все технические нюансы, включая размещение сайта на сервере. Ваш сайт становится
-                    доступным для всего мира.
-                </div>
+            <div class="text2">
+                Ваши запросы не остаются без ответа, а работы выполняются в сжатые сроки.
             </div>
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/5.gif' %}" alt="">
-                <div class="absol_proz">
-                    Адаптация
-                </div>
-                <div class="text2">
-                    Во все пакеты услуг входит создание адаптивной версии вашего сайта для любых устройств.
-                </div>
+        </div>
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/3.gif' %}" alt="">
+            <div class="absol_proz">
+                Управление контентом
             </div>
-            <div class="item">
-                <img class="gifka" src="{% static 'img/картинки gifki/6.gif' %}" alt="">
-                <div class="absol_proz">
-                    Погружение в суть
-                </div>
-                <div class="text2">
-                    В этот этап мы вкладываем душу, чтобы понять ваш бизнес. Это позволяет нам создать сайт, который не
-                    только соответствует, но и отражает вашу сущность.
-                </div>
+            <div class="text2">
+                 Наш интуитивно понятный интерфейс позволяет вам легко обновлять контент самостоятельно, поддерживая
+                актуальность информации.
+            </div>
+        </div>
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/4.gif' %}" alt="">
+            <div class="absol_proz">
+                Забота до конца
+            </div>
+            <div class="text2">
+                Мы берем на себя все технические нюансы, включая размещение сайта на сервере. Ваш сайт становится
+                доступным для всего мира.
+            </div>
+        </div>
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/5.gif' %}" alt="">
+            <div class="absol_proz">
+                Адаптация
+            </div>
+            <div class="text2">
+                Во все пакеты услуг входит создание адаптивной версии вашего сайта для любых устройств.
+            </div>
+        </div>
+        <div class="item">
+            <img class="gifka" src="{% static 'img/картинки gifki/6.gif' %}" alt="">
+            <div class="absol_proz">
+                Погружение в суть
+            </div>
+            <div class="text2">
+                В этот этап мы вкладываем душу, чтобы понять ваш бизнес. Это позволяет нам создать сайт, который не
+                только соответствует, но и отражает вашу сущность.
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

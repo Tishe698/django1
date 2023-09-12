@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
+</head>
+        <header>
+            <nav class="close" role="navigation">
+                <div class="logo"><img src="{% static 'img/logotip.png' %}" alt=""></div>
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#" target="_blank">
+                            <div class="burger_tel_znachjok">
+                                <img src="{% static 'img/3. Круг, заливка, большая.png' %}" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <li class="lishki">Преимущества</li>
+                        </a>
+                        <a href="#">
+                            <li class="lishki">Цены</li>
+                        </a>
+                        <a href="#">
+                            <li class="lishki">Этапы работы</li>
+                        </a>
+                        <a href="#">
+                            <li class="zakaz_sait_burger">Заказать сайт</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="open">
+                <div class="header_open">
+                    <div class="foto">
+                        <img src="{% static 'img/logotip.png' %}" alt="">
+                    </div>
+                    <div class="links">
+                        <div class="preimshestvo">
+                            Преимущества
+                        </div>
+                        <div class="cena">
+                            Цены
+                        </div>
+                        <div class="etapy">
+                            Этапы работы
+                        </div>
+                    </div>
+                    <div class="links2">
+                        <div class="zakaz_sait">
+                            Заказать сайт
+                        </div>
+                        <div class="telefon_znachok">
+                            <img src="{% static 'img/звонок.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+</html>
