@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_section_tariphy {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Montserrat;
+    background: #E8E8E8;
+}
+
+.tariphy {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.container_tariphy {
+    width: 280px;
+    max-width: 100%;;
+    border-radius: 0rem 0rem 0.625rem 0.625rem;
+    width: 235px;
+    height: 450px;
+    position: relative;
+
+}
+
+.zagolovok_tariphy {
+    background: #3CD070;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paket_tariphy {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content_tariphy {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+.content_tariphy1 {
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.content_tariphy2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3px 20px;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.cena_tariphy {
+    display: flex;
+    justify-content: center;
+}
+
+.podrobnee_tariphy {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 5px 20px;
+}
+
+.podrobnee_tariphy p {
+    padding: 14px;
+    border-radius: 0.5rem;
+    background: #2E363E;
+    color: white;
+    font-size: 12px;
+}
+
+.cvet_paket2 {
+    background: #2D9CDB;
+}
+
+.cvet_paket3 {
+    background: #FF7E00;
+}
+
+.cvet_paket4 {
+    background: #9457EB;
+}
+
+.flex_cena_podrobnee {
+    position: absolute;
+    bottom: 1%;
+    padding-left: 46px;
+}
+
+.paket_indidualnyi {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+
+.cvet_tarifa {
+    background-color: white;
+    height: 361px;
+    border-radius: 0rem 0rem 0.625rem 0.625rem;
+}
+
+.zagolovok_paket_individ {
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+    background: #3CC;
+    display: flex;
+    justify-content: center;
+    height: 72px;
+    font-size: 24px;
+    font-weight: 700;
+    align-items: center;
+    color: #2E363E;
+    text-align: center;
+}
+
+.bazov_funcii {
+    font-size: 12px;
+    text-align: center;
+    width: 623px;
+    max-width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.05575rem;
+    color: #2E363E;
+    margin-bottom: 2%;
+    padding: 2% 2% 0 2%;
+    height: auto;
+}
+
+.flex_paket_individ {
+    display: flex;
+}
+
+.flex_paket_individ_text {
+    display: flex;
+    flex-direction: column;
+    color: #2E363E;
+    margin-left: 9%;
+    font-size: 13px;
+    width: 387px;
+    max-width: 100%;
+    gap: 6%;
+    justify-content: center;
+    line-height: 160%;
+    letter-spacing: 0.05rem;
+
+}
+
+.kartinka_paket_individ img {
+    width: 150px;
+    height: auto;
+}
+
+.soimost_zapros {
+    color: #242447;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 600px;
+    max-width: 100%;
+    padding: 0 2% 0 2%;
+    margin: 0 auto;
+    letter-spacing: 0.01rem;
+}
+
+.podrobnee_tariphy2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 5px 20px;
+}
+
+.podrobnee_tariphy2 p {
+    padding: 14px 30px;
+    border-radius: 0.5rem;
+    background: #2E363E;
+    color: white;
+    font-size: 12px;
+}
+
+@media (min-width: 992px) {
+    .container_grid_terapia {
+        display: grid;
+        grid-template-columns: repeat(4, 0.2fr);
+        /* Уменьшаем ширину колонок */
+        gap: 1%;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 2%;
+    }
+
+    .content_tariphy1 {
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container_grid_terapia {
+        align-items: center;
+        margin-top: 2%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, minmax(250px, 0.5fr));
+        margin-bottom: 3%;
+
+    }
+
+    .container_tariphy {
+        margin-bottom: 2%;
+    }
+
+    .container_mobile {
+        height: 443px;
+    }
+}
+
+@media (max-width: 500px) {
+    .flex_paket_individ {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_grid_terapia {
+        align-items: center;
+        margin-top: 2%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, minmax(250px, 2fr));
+        margin-bottom: 3%;
+    }
+    .flex_paket_individ_text {
+        width: 350px;
+        margin: 0;
+    }
+}
+

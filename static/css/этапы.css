@@ -1,0 +1,256 @@
+
+.etap_planirov {
+    width: 29em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding-top: 2em;
+}
+
+.etap_planirov p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0.23225rem;
+    border: 2px solid #FFF;
+    background: rgba(226, 234, 242, 0.80);
+    font-weight: 700;
+}
+
+.section3 {
+    background-image: url(../img/этапы_разработки/фон_3_секции.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3%;
+}
+
+.container_section3 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container_section3_end {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.box_border {
+    border-radius: 0.23225rem;
+    border: 2px solid #FFF;
+    background: rgba(226, 234, 242, 0.80);
+    width: 360px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.box_border2 {
+    border-radius: 0.23225rem;
+    border: 2px solid #FFF;
+    background: rgba(226, 234, 242, 0.80);
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 100%;
+}
+
+.padding2etap {
+    padding: 0 10px;
+}
+
+
+.flex_boxa {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 24px;
+    align-items: center;
+}
+
+.flex_5_etap {
+    flex-direction: row;
+    padding: 0;
+    align-items: normal;
+}
+
+
+.zagolovok_sect3,
+.zagolovok_5_etap {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.karinka_sect3 img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+.content_sect3 {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 89%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section3endetap {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.box_border3 {
+    border-radius: 0.23225rem;
+    border: 2px solid #FFF;
+    background: rgba(226, 234, 242, 0.80);
+    width: 505px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 100%;
+}
+
+
+.testtirov_width {
+    width: 408px;
+    padding: 10px;
+}
+
+.tech_kartinka {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.tech_kartinka img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.gif_block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+
+.zagolovok_gif {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.gif_block img {
+    width: 20px;
+}
+
+.content_gifki {
+    font-size: 11px;
+}
+
+@media (min-width: 992px) {
+    .container_section3 {
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+        /* Уменьшаем ширину колонок */
+        gap: 1%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .flex_gifki_box {
+        display: flex;
+    }
+
+    .razrabotka_kartinka {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+
+
+    .padding_zapusk {
+        padding: 0;
+    }
+
+    .width_conten_proekt {
+        width: 52%;
+    }
+
+    .zapusk_box {
+        width: 47%;
+    }
+
+    .zapysk_width {
+        width: 927px;
+        margin-bottom: 0.5em;
+    }
+
+    .zagolovok_5_etap_pusk {
+        width: 41%;
+        padding: 20px 0px;
+        margin-left: 37px;
+        text-align: start;
+    }
+
+    .content_zapusk {
+        width: 58%;
+        margin-left: 7%;
+        line-height: 200%;
+    }
+
+    .tech_poderjka_padding {
+        font-size: 25px;
+        padding-top: 2%;
+    }
+
+    .gif_block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2%;
+    }
+
+
+}
+
+
+
+@media (max-width: 992px) {
+
+
+    .flex_boxa {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .width_border {
+        width: 360px;
+        margin-bottom: 1%;
+    }
+
+    .padding2etap {
+        padding: 24px 0;
+    }
+
+    .gif_block {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .etap_planirov {
+        width: 17em;
+    }
+}

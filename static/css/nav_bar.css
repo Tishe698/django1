@@ -183,7 +183,9 @@ header {
 }
 
 .logo {
+    position: fixed;
     padding-left: 5px;
+    top: 10px;
 }
 
 .logo img {
