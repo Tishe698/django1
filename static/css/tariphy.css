@@ -22,13 +22,11 @@
 }
 
 .container_tariphy {
-    width: 280px;
     max-width: 100%;;
     border-radius: 0rem 0rem 0.625rem 0.625rem;
     width: 235px;
     height: 450px;
     position: relative;
-
 }
 
 .zagolovok_tariphy {
@@ -200,11 +198,13 @@
     color: white;
     font-size: 12px;
 }
-.individ_paket{
+
+.individ_paket {
     height: auto;
 
 }
-.podrobnee_praisom{
+
+.podrobnee_praisom {
     color: #2E363E;
     font-size: 20px;
     display: flex;
@@ -213,16 +213,17 @@
     text-align: center;
     padding-bottom: 5%;
 }
+
 @media (min-width: 992px) {
     .container_grid_terapia {
-display: grid;
-    grid-template-columns: repeat(4, 0.2fr);
-    gap: 1%;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 2%;
-    align-items: center;
-    justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 0.2fr);
+        gap: 1%;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 2%;
+        align-items: center;
+        justify-items: center;
     }
 
     .content_tariphy1 {
@@ -258,6 +259,29 @@ display: grid;
         text-align: center;
     }
 
+    .container_tariphy {
+        width: 372px;
+        max-width: 100%;
+        height: 450px;
+        position: relative;
+    }
+
+    .flex_cena_podrobnee {
+        padding: 0;
+        margin-top: 36%;
+        width: 100%;
+
+    }
+
+    .content_tariphy1 {
+        width: 260px;
+    }
+
+    .podrobnee_tariphy p {
+        padding: 14px 30px;
+        font-size: 12px;
+    }
+
     .container_grid_terapia {
         align-items: center;
         margin-top: 2%;
@@ -265,7 +289,10 @@ display: grid;
         justify-items: center;
         grid-template-columns: repeat(1, minmax(250px, 2fr));
         margin-bottom: 3%;
+        width: 85%;
+        margin: 0 auto;
     }
+
     .flex_paket_individ_text {
         width: 350px;
         margin: 0;
