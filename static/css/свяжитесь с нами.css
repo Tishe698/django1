@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_svyz_snami {
+    width: 75%;
+    margin: 0 auto;
+    min-height: 60vh;
+    background: url(../img/связь_с_нами/фон_связ_с_нами.png);
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    background-size: contain;
+    background-position: left;
+    margin-top: 5%;
+}
+
+.svyz_otlich_proekt {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    width: 469px;
+            max-width: 100%;
+    margin-left: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svyzatsy_knopka {
+    color: white;
+    border-radius: 9px;
+    background: #2E363E;
+    padding: 14px;
+    width: 176px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10%;
+}
+.svyz_baba {
+    display: none;
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 600px) {
+    .container_svyz_snami {
+        background: none;
+    }
+
+    .svyz_otlich_proekt {
+        margin: 0 auto;
+            font-size: 20px;
+        font-weight: 500;
+    }
+
+    .svyz_baba {
+        position: relative;
+        display: block;
+        height: 261px;
+    }
+
+    .svyz_baba img {
+        width: 280px;
+        height: 261px;
+        object-fit: contain;
+    }
+
+    .svyzatsy_knopka {
+        margin: 0;
+            width: 250px;
+    }
+}
+
