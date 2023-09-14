@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{% static 'css/этапы.css' %}">
     <link rel="stylesheet" href="{% static 'css/tariphy.css' %}">
     <link rel="stylesheet" href="{% static 'css/свяжитесь с нами.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vash_sait.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'js/прокрутка.js' %}"></script>
     <link rel="stylesheet" href={% static "css/анимация_прокрутки.css" %}>
@@ -52,6 +54,7 @@
         </div>
     </div>
 </div>
+{% include 'vash_sait.html' %}
 <div class="conteiner_section2">
     <div class="preimyshestvo">Преимущества работы с нами</div>
     <div class="container">
@@ -119,5 +122,6 @@
 {% include 'etapy.html' %}
 {% include 'tariphy.html' %}
 {% include 'свяжитесь_с_нами.html' %}
+{% include 'footer.html' %}
 </body>
 </html>

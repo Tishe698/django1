@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #2E363E;
+    min-height: 50vh;
+}
+
+.container_footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nav_footer a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.nav_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.obsudit_proekt {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 59px;
+    font-size: 14px;
+}
+
+.text_footer {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4%;
+}
+
+@media (max-width: 600px) {
+    footer {
+        margin-top: 3%;
+    }
+
+    .flex1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_footer {
+        align-items: center;
+        gap: 5px;
+    }
+}
