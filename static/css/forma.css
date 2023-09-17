@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.krestik {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+.popup-form {
+display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    transition: opacity 0.3s cubic-bezier(1, 0.52, 0, -0.17), height 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-form.active {
+    height: 100%; /* Изменено с "display: block" */
+    opacity: 1;
+    visibility: visible;
+}
+.container_forma {
+    min-height: 100vh;
+    width: 938px;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container_forma_razmer {
+    padding: 0 46px;
+    border-radius: 0.9375rem;
+    border: 2px solid #2E363E;
+        background: #F2F6FA;
+    position: relative;
+}
+
+.davaite_proekt {
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.chto_delaem2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chto_delaem_spisok {
+    padding: 15px 0;
+}
+
+.chto_delaem_spisok ul {
+    display: flex;
+    gap: 10px;
+}
+
+.chto_delaem_spisok li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer; /* Добавляем указатель при наведении */
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.chto_delaem_spisok li:not(.selected) {
+    background-color: white; /* Set the background color for unselected items */
+}
+
+/* Стиль для выбранного элемента */
+/* Стиль для кнопки отправки */
+button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #5CD6D6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    color: white;
+    background-color: #5CD6D6;
+}
+
+.chto_delaem {
+    font-size: 24px;
+    font-weight: 600;
+    width: 428px;
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.kontakty_forma {
+    display: flex;
+    padding-top: 7%;
+    gap: 10%;
+
+}
+
+.vvod_dannyh {
+    width: 326px;
+    max-width: 100%;
+    min-height: 50px;
+    height: auto;
+    border: none; /* Remove the default border */
+    border-bottom: 1px solid #000; /* Add a bottom border with the desired color */
+    background: none;
+    outline: none;
+}
+
+.flex_vodim_kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+.padding_vvoda {
+    padding: 15px 15px 15px 0;
+}
+
+.width_telepon {
+    width: 289px;
+}
+
+.soglasie_pers {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 934px) {
+    .chto_delaem_spisok ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .chto_delaem {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .kontakty_forma {
+        flex-direction: column;
+    }
+
+    .width_telepon {
+        width: 326px;
+    }
+
+}

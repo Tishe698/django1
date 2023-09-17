@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/свяжитесь с нами.css' %}">
     <link rel="stylesheet" href="{% static 'css/vash_sait.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forma.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'js/прокрутка.js' %}"></script>
     <link rel="stylesheet" href={% static "css/анимация_прокрутки.css" %}>
@@ -22,10 +23,11 @@
 </head>
 {% include 'header.html' %}
 <body>
+{% include 'forma.html' %}
 <div class="section1">
     <div class="conteiner_section1">
         <div class="block_sozdaem_saity">
-            <div class="sozdaem_saity_kluch">
+            <div class="sozdaem_saity_kluch ">
                 Создаём сайты под ключ
             </div>
             <div class="block_babki">
@@ -44,7 +46,7 @@
                 </div>
             </div>
             <div class="zapolny_formy_block">
-                <div class="zapolnyt_formy">
+                    <div class="zapolnyt_formy forma_otkroisy">
                     Заполнить форму
                 </div>
                 <div class="bazovay_adaptacia">
@@ -54,7 +56,6 @@
         </div>
     </div>
 </div>
-{% include 'vash_sait.html' %}
 <div class="conteiner_section2">
     <div class="preimyshestvo">Преимущества работы с нами</div>
     <div class="container">
@@ -119,9 +120,12 @@
         </div>
     </div>
 </div>
+{% include 'vash_sait.html' %}
 {% include 'etapy.html' %}
 {% include 'tariphy.html' %}
 {% include 'свяжитесь_с_нами.html' %}
 {% include 'footer.html' %}
+<script src="{% static 'js/форма.js' %}"></script>
+<script src="{% static 'js/poyzvlenie_forms.js' %}"></script>
 </body>
 </html>

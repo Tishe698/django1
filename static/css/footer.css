@@ -31,6 +31,7 @@ footer {
 .nav_footer {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .obsudit_proekt {
