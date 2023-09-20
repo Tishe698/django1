@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel_pulse_techno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/forma_spasibo.css' %}">
+</head>
+<body>
+<div class="container_backgr_uspeh">
+    <div class="container_uspeh">
+        <div class="uspeh">
+            Ваша форма обратной связи успешна отправлена .
+        </div>
+        <div class="gif_uspeh">
+            <img src="{% static 'img/email.gif' %}" alt="">
+        </div>
+        <div class="svyz_menedzher">
+            В ближайщее время наш менеджер свяжется с вами для уточнения деталей и составит персональное предлодежение
+            именно для вас .
+        </div>
+        <a class="knopka_vernutsy_sait" href="{% url 'home' %}">Вернуться на сайт</a>
+
+
+    </div>
+</div>
+</body>
+</html>

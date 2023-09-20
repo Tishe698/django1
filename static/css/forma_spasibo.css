@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+.container_backgr_uspeh{
+    background: #FFF9F0;
+}
+.container_uspeh{
+width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uspeh{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    color: rgba(99, 138, 160, 0.79);
+    text-align: center;
+        text-shadow: 2px 8px 16px rgba(194, 198, 208, 0.06);
+    font-weight: 700;
+}
+
+.gif_uspeh {
+    display: flex;
+    justify-content: center;
+    height: 236px;
+
+}
+.gif_uspeh img{
+    width: 600px;
+    max-width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+.svyz_menedzher{
+    color: rgba(99, 138, 160, 0.79);
+    text-align: center;
+    letter-spacing: 0.315rem;
+    width: 900px;
+    font-size: 23px;
+    max-width: 100%;
+    line-height: 38px;
+}
+.knopka_vernutsy_sait{
+    border-radius: 1rem;
+    background: rgba(239, 224, 219, 0.81);
+    width: 280px;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.35625rem;
+    color: #A88E8E;
+    margin-top: 30px;
+}

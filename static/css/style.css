@@ -130,7 +130,7 @@
     display: none;
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 1085px) {
     .block_sozdaem_saity {
         padding-bottom: 4%;
     }

@@ -1,12 +1,14 @@
 import telegram
 from asgiref.sync import async_to_sync
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 
 # Create your views here.
 def index(req):
     return render(req, 'index.html')
+def uspeh(req):
+    return render(req, 'спасибо_за_обращение.html')
 
 
 @async_to_sync
@@ -30,7 +32,7 @@ async def send_to_telegram(request):
 
         await bot.send_message(chat_id=chat_id, text=message)
 
-        return JsonResponse({'status': 'ok'})
+        return redirect('uspeh')
 
     else:
         return JsonResponse({'error': 'POST request required'})

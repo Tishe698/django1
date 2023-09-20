@@ -1,95 +1,97 @@
 <div id="popupForm" class="popup-form">
     <!-- Close button -->
-<form method="POST" action="{% url 'send_to_telegram' %}" id="myForm">
-    {% csrf_token %}
-    <div class="container_forma">
-        <div class="container_forma_razmer">
-            <div class="krestik">✕</div>
-            <div class="davaite_proekt">
-                Давайте сделаем проект
-            </div>
-            <div class="chto_delaem">
-                Какой сайт вам нужен ?
-            </div>
-            <div class="chto_delaem_spisok">
-                <ul id="itemList">
-                    <li data-value="Сайт-визитка">Сайт-визитка</li>
-                    <li data-value="Landing page">Landing page</li>
-                    <li data-value="Корпоративный сайт">Корпоративный сайт</li>
-                    <li data-value="Интернет-магазин">Интернет-магазин</li>
-                    <li data-value="Особый проект">Особый проект</li>
-                </ul>
-            </div>
-            <div class="chto_delaem">
-                Какие сроки?
-            </div>
-            <div class="chto_delaem_spisok">
-                <ul id="itemList2">
-                    <li data-value="Еще вчера">“Еще вчера”</li>
-                    <li data-value="10-14 дней">10-14 дней</li>
-                    <li data-value="1-2 месяца">1-2 месяца</li>
-                    <li data-value="до 6 месяцев">до 6 месяцев</li>
-                    <li data-value="от 6 месяцев">от 6 месяцев</li>
-                </ul>
-            </div>
-            <div class="chto_delaem">
-                Что уже имеется?
-            </div>
-            <div class="chto_delaem_spisok">
-                <ul id="itemList3">
-                    <li data-value="Ничего нет">Ничего нет</li>
-                    <li data-value="Есть фото">Есть фото</li>
-                    <li data-value="Есть логотип">Есть логотип</li>
-                    <li data-value="Наработки контента">Наработки контента</li>
-                    <li data-value="Готовый макет">Готовый макет</li>
-                </ul>
-            </div>
-            <div class="chto_delaem">
-                Как удобнее с вами связаться?
-            </div>
-            <div class="chto_delaem_spisok">
-                <ul id="itemList4">
-                    <li data-value="Позвонить по телефону">Позвонить по телефону</li>
-                    <li data-value="WhatsApp">WhatsApp</li>
-                    <li data-value="Telegram">Telegram</li>
-                </ul>
-            </div>
-            <div class="kontakty_forma">
-                <div class="flex_vodim_kontakt">
-                    <div class="chto_delaem2 ">
-                        Ваше имя:
+    <form method="POST" action="{% url 'send_to_telegram' %}" id="myForm">
+        {% csrf_token %}
+        <div class="container_forma">
+            <div class="container_forma_razmer">
+                <div class="krestik">✕</div>
+                <div class="davaite_proekt">
+                    Давайте сделаем проект
+                </div>
+                <div class="chto_delaem">
+                    Какой сайт вам нужен ?
+                </div>
+                <div class="chto_delaem_spisok">
+                    <ul id="itemList">
+                        <li data-value="Сайт-визитка">Сайт-визитка</li>
+                        <li data-value="Landing page">Landing page</li>
+                        <li data-value="Корпоративный сайт">Корпоративный сайт</li>
+                        <li data-value="Интернет-магазин">Интернет-магазин</li>
+                        <li data-value="Особый проект">Особый проект</li>
+                    </ul>
+                </div>
+                <div class="chto_delaem">
+                    Какие сроки?
+                </div>
+                <div class="chto_delaem_spisok">
+                    <ul id="itemList2">
+                        <li data-value="Еще вчера">“Еще вчера”</li>
+                        <li data-value="10-14 дней">10-14 дней</li>
+                        <li data-value="1-2 месяца">1-2 месяца</li>
+                        <li data-value="до 6 месяцев">до 6 месяцев</li>
+                        <li data-value="от 6 месяцев">от 6 месяцев</li>
+                    </ul>
+                </div>
+                <div class="chto_delaem">
+                    Что уже имеется?
+                </div>
+                <div class="chto_delaem_spisok">
+                    <ul id="itemList3">
+                        <li data-value="Ничего нет">Ничего нет</li>
+                        <li data-value="Есть фото">Есть фото</li>
+                        <li data-value="Есть логотип">Есть логотип</li>
+                        <li data-value="Наработки контента">Наработки контента</li>
+                        <li data-value="Готовый макет">Готовый макет</li>
+                    </ul>
+                </div>
+                <div class="chto_delaem">
+                    Как удобнее с вами связаться?
+                </div>
+                <div class="chto_delaem_spisok">
+                    <ul id="itemList4">
+                        <li data-value="Позвонить по телефону">Позвонить по телефону</li>
+                        <li data-value="WhatsApp">WhatsApp</li>
+                        <li data-value="Telegram">Telegram</li>
+                    </ul>
+                </div>
+                <div class="kontakty_forma">
+                    <div class="flex_vodim_kontakt">
+                        <div class="chto_delaem2 ">
+                            Ваше имя:
+                        </div>
+                        <div class="chto_delaem_spisok padding_vvoda">
+                            <input class="vvod_dannyh" type="text" name="name" placeholder="Введите ваше имя" required>
+                        </div>
                     </div>
-                    <div class="chto_delaem_spisok padding_vvoda">
-                        <input class="vvod_dannyh" type="text" name="name" placeholder="Введите ваше имя" required>
+                    <div class="flex_vodim_kontakt">
+                        <div class="chto_delaem2">
+                            Ваш номер телефона:
+                        </div>
+                        <div class="chto_delaem_spisok padding_vvoda">
+                            <input class="vvod_dannyh width_telepon" type="tel" name="phone"
+                                   placeholder="Введите ваш номер телефона"
+                                   required
+                                   oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                   maxlength="11">
+                        </div>
                     </div>
                 </div>
                 <div class="flex_vodim_kontakt">
                     <div class="chto_delaem2">
-                        Ваш номер телефона:
+                        Несколько слов о проекте:
                     </div>
                     <div class="chto_delaem_spisok padding_vvoda">
-                        <input class="vvod_dannyh width_telepon" type="tel" name="phone"
-                               placeholder="Введите ваш номер телефона"
-                               required>
-                    </div>
-                </div>
-            </div>
-            <div class="flex_vodim_kontakt">
-                <div class="chto_delaem2">
-                    Несколько слов о проекте:
-                </div>
-                <div class="chto_delaem_spisok padding_vvoda">
                 <textarea class="vvod_dannyh " name="project_description"
                           placeholder="Напишите несколько слов о вашем проекте"
                           required></textarea>
+                    </div>
+                </div>
+                <button type="submit">Отправить</button>
+                <div class="soglasie_pers">
+                    Нажимая на кнопку “Отправить” вы даете согласие
+                    на обработку персональных данных
                 </div>
             </div>
-            <button type="submit">Отправить</button>
-            <div class="soglasie_pers">
-                Нажимая на кнопку “Отправить” вы даете согласие
-                на обработку персональных данных
-            </div>
         </div>
-    </div>
-</form>
+    </form>
 </div>
