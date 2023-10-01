@@ -11,7 +11,7 @@
  */
 
 header {
-    background: #3E3E3E;
+    background: white;
     margin: 0;
     padding: 0;
 }
@@ -198,7 +198,7 @@ header {
     display: flex;
     line-height: 4.5vw;
     gap: 6.3vw;
-    color: white;
+    color: #2E363E;
     font-size: 12px;
 }
 
@@ -210,20 +210,13 @@ header {
     gap: 2vw;
 }
 
-.telefon_znachok {
-    display: flex;
-    align-items: center;
-}
 
-.telefon_znachok img {
-    width: 35px;
-    height: 35px;
-}
+
+
 
 .zakaz_sait {
-    background: white;
-    color: black;
-    border-radius: 6vw;
+    background: #2E363E;
+    color: white;
     height: 41px;
     width: 112px;
     display: flex;

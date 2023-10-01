@@ -7,13 +7,12 @@
 }
 
 .etap_planirov p {
-    display: flex;
+display: flex;
     justify-content: center;
     padding: 10px;
-    border-radius: 0.23225rem;
     border: 2px solid #FFF;
-    background: rgba(226, 234, 242, 0.80);
-    font-weight: 700;
+    background: white;
+    font-weight: 300;
 }
 
 .section3 {
@@ -38,9 +37,8 @@
 }
 
 .box_border {
-    border-radius: 0.23225rem;
     border: 2px solid #FFF;
-    background: rgba(226, 234, 242, 0.80);
+    background: white;
     width: 360px;
     max-width: 100%;
     margin: 0 auto;
@@ -48,9 +46,8 @@
 }
 
 .box_border2 {
-    border-radius: 0.23225rem;
     border: 2px solid #FFF;
-    background: rgba(226, 234, 242, 0.80);
+    background: white;
     width: 550px;
     max-width: 100%;
     margin: 0 auto;
@@ -82,8 +79,9 @@
     font-size: 25px;
     display: flex;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 300;
     text-align: center;
+    color: #2E363E;
 }
 
 .karinka_sect3 img {
@@ -110,9 +108,8 @@
 }
 
 .box_border3 {
-    border-radius: 0.23225rem;
     border: 2px solid #FFF;
-    background: rgba(226, 234, 242, 0.80);
+    background: white;
     width: 505px;
     max-width: 100%;
     margin: 0 auto;
@@ -153,6 +150,7 @@
 
 .gif_block img {
     width: 20px;
+    mix-blend-mode: darken;
 }
 
 .content_gifki {

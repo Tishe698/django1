@@ -17,8 +17,8 @@
 }
 
 .svyz_otlich_proekt {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 33px;
+    font-weight: 300;
     text-align: center;
     width: 469px;
     max-width: 100%;
@@ -26,11 +26,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #2E363E;
 }
 
 .svyzatsy_knopka {
     color: white;
-    border-radius: 9px;
     background: #2E363E;
     padding: 14px;
     width: 176px;

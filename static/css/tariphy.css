@@ -8,7 +8,9 @@
     width: 100%;
     margin: 0 auto;
     font-family: Montserrat;
-    background: #E8E8E8;
+    background: url("../img/tariphy/фон_тариф.png"), no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .tariphy {
@@ -19,19 +21,18 @@
     justify-content: center;
     text-align: center;
     padding-top: 2%;
+    color: white;
 }
 
 .container_tariphy {
     max-width: 100%;;
-    border-radius: 0rem 0rem 0.625rem 0.625rem;
-    width: 235px;
+        width: 302px;
     height: 450px;
     position: relative;
 }
 
 .zagolovok_tariphy {
     background: #3CD070;
-    border-radius: 0.625rem 0.625rem 0rem 0rem;
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -39,13 +40,6 @@
     justify-content: center;
 }
 
-.paket_tariphy {
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    text-align: center;
-}
 
 .content_tariphy {
     display: flex;
@@ -63,13 +57,14 @@
 }
 
 .content_tariphy2 {
-    display: flex;
+display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    padding: 52px 30px;
-    font-size: 12px;
-    line-height: 140%;
+    padding: 22px 29px;
+    font-size: 15px;
+    line-height: 164%;
+    letter-spacing: 0.5px;
 }
 
 .cena_tariphy {
@@ -121,17 +116,15 @@
 .cvet_tarifa {
     background-color: white;
     height: 361px;
-    border-radius: 0rem 0rem 0.625rem 0.625rem;
 }
 
 .zagolovok_paket_individ {
-    border-radius: 0.625rem 0.625rem 0rem 0rem;
-    background: #3CC;
+background: #3CC;
     display: flex;
     justify-content: center;
     height: 72px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 300;
     align-items: center;
     color: #2E363E;
     text-align: center;
@@ -206,7 +199,7 @@
 }
 
 .podrobnee_praisom {
-    color: #2E363E;
+    color: white;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -251,9 +244,10 @@
     }
 
     .content_tariphy2 {
-        padding: 52px 81px;
-        font-size: 14px;
-        line-height: 166%;
+    padding: 36px 62px;
+    font-size: 15px;
+    line-height: 166%;
+    letter-spacing: 1px;
     }
 
     .container_mobile {
@@ -270,13 +264,12 @@
     }
 
     .content_tariphy2 {
-        padding: 52px 0;
-        font-size: 13px;
-
-        width: 189px;
-        max-width: 100%;
-        margin: 0 auto;
-        line-height: 181%;
+padding: 29px 7px;
+    font-size: 14px;
+    width: 240px;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 181%;
     }
 
     .container_tariphy {

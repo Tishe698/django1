@@ -6,18 +6,19 @@
 }
 
 .conteiner_section1 {
-    width: 75%;
+    width: 556px;
+    max-width: 100%;
     min-height: 70vh;
     margin: 0 auto;
-    background: url("../img/Портрет 3 1.png");
-    background-repeat: no-repeat;
-    padding-top: 5%;
-    background-size: contain;
-    background-position: right;
+    padding: 0 20px;
+
 }
 
 .section1 {
-    background: #3E3E3E;
+    background: url("../img/Портрет 3 1.png");
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    background-size: cover;
 
 }
 
@@ -44,12 +45,12 @@
 }
 
 .sozdaem_saity_kluch {
-    color: white;
-    font-size: 34px;
+    color: #2E363E;
+    font-size: 62px;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -0.0625rem;
-    width: 444px;
+    width: 528px;
     max-width: 100%;
 }
 
@@ -64,13 +65,13 @@
 
 .razrabotka_sovrem_saitov {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
     letter-spacing: -0.0125rem;
-    color: white;
-    width: 400px;
+    color: #2E363E;
+    width: 490px;
     max-width: 100%;
     padding-top: 1%;
 }
@@ -78,7 +79,7 @@
 .zapolnity_formy {
     color: white;
     font-family: Montserrat;
-    font-size: 0.6875rem;
+    font-size: 16px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.06875rem;
@@ -87,8 +88,7 @@
     width: 36.1875rem;
     max-width: 100%;
     height: auto;
-    border-radius: 0.4rem;
-    background: #5CD6D6;
+    background: #2E363E;
     padding: 9px;
     margin-top: 4%;
     align-items: center;
@@ -99,36 +99,30 @@
     display: flex;
     gap: 15px;
     width: 400px;
-    padding-top: 4%;
+    padding-top: 12%;
 }
 
 .zapolnyt_formy {
-    font-size: 11px;
+    font-size: 15px;
     width: 158px;
     height: 44px;
-    background-color: white;
-    color: black;
+    background-color: #2E363E;
+    color: white;
     display: flex;
     justify-content: center;
-    border-radius: 0.3rem;
     align-items: center;
     font-family: 'MONTSERRAT';
     font-weight: 500;
 }
-
 .bazovay_adaptacia {
-    font-size: 11px;
+    font-size: 14px;
     width: 177px;
     height: 44px;
     display: flex;
     align-items: center;
-    color: white;
+    color: #2E363E;
 }
 
-.zopolnity_formy_kartinka {
-    position: absolute;
-    display: none;
-}
 
 @media (max-width: 1085px) {
     .block_sozdaem_saity {
@@ -139,19 +133,6 @@
         background: none;
     }
 
-
-    .zopolnity_formy_kartinka {
-        position: relative;
-        display: block;
-        height: 261px;
-    }
-
-    .zopolnity_formy_kartinka img {
-        width: 445px;
-        max-width: 100%;
-        height: 261px;
-        object-fit: contain;
-    }
 
     .zapolnity_formy {
         margin: 0;
@@ -182,9 +163,9 @@
 
 .preimyshestvo {
     display: flex;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
     justify-content: center;
 }
@@ -201,17 +182,18 @@
 }
 
 .absol_proz {
-    display: flex;
+display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 19px;
     color: #2E363E;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 300;
+    line-height: 137%;
 }
 
 .text2 {
-    padding-top: 10px;
+padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,6 +201,7 @@
     font-size: 13px;
     font-family: Montserrat;
     width: 100%;
+    line-height: 154%;
 }
 
 .container {
@@ -229,12 +212,13 @@
 }
 
 @media (max-width: 768px) {
-.container {
-    grid-template-columns: repeat(2, minmax(205px, 1fr));
-}
+    .container {
+        grid-template-columns: repeat(2, minmax(205px, 1fr));
+    }
+
     .gifka {
-    width: 200px;
-}
+        width: 200px;
+    }
 }
 
 @media (max-width: 622px) {
@@ -242,11 +226,13 @@
         text-align: center;
     }
 }
+
 @media (max-width: 526px) {
-.container {
-    grid-template-columns: repeat(1, minmax(205px, 1fr));
+    .container {
+        grid-template-columns: repeat(1, minmax(205px, 1fr));
+    }
 }
-}
+
 @media (max-width: 456px) {
     .zapolny_formy_block {
         display: flex;

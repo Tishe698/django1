@@ -5,7 +5,7 @@
 }
 
 footer {
-    background-color: #2E363E;
+    background: #1E2329;
     min-height: 50vh;
 }
 
@@ -35,14 +35,13 @@ footer {
 }
 
 .obsudit_proekt {
-    color: black;
+color: black;
     background-color: white;
-    padding: 10px;
+    padding: 22px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
     height: 59px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .text_footer {
