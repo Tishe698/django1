@@ -1,16 +1,21 @@
 import telegram
 from asgiref.sync import async_to_sync
 from django.http import JsonResponse
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 
 
 # Create your views here.
 def index(req):
     return render(req, 'index.html')
+
+
 def uspeh(req):
     return render(req, 'спасибо_за_обращение.html')
+
+
 def landing(req):
-    return render(req, 'tarify_dum/tarif_laiding.html' )
+    return render(req, 'tarif_laiding.html')
+
 
 @async_to_sync
 async def send_to_telegram(request):
