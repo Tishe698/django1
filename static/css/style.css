@@ -114,6 +114,7 @@
     font-family: 'MONTSERRAT';
     font-weight: 500;
 }
+
 .bazovay_adaptacia {
     font-size: 14px;
     width: 177px;
@@ -182,7 +183,7 @@
 }
 
 .absol_proz {
-display: flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     font-size: 19px;
@@ -193,7 +194,7 @@ display: flex;
 }
 
 .text2 {
-padding-top: 10px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,6 +225,16 @@ padding-top: 10px;
 @media (max-width: 622px) {
     .zapolnity_formy {
         text-align: center;
+        margin-top: 4%;
+    }
+
+    .sozdaem_saity_kluch {
+        font-size: 51px;
+    }
+
+    .razrabotka_sovrem_saitov {
+        font-size: 21px;
+        padding-top: 2%;
     }
 }
 
@@ -248,6 +259,22 @@ padding-top: 10px;
     .bazovay_adaptacia {
         text-align: center;
     }
+
+    .sozdaem_saity_kluch {
+        color: #2E363E;
+        font-size: 44px;
+        width: 528px;
+
+    }
+
+    .razrabotka_sovrem_saitov {
+        font-family: Montserrat;
+        font-size: 19px;
+        width: 409px;
+    }
+.zapolnity_formy {
+    font-size: 14px;
+}
 }
 
 @media (min-width: 992px) {

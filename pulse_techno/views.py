@@ -9,7 +9,8 @@ def index(req):
     return render(req, 'index.html')
 def uspeh(req):
     return render(req, 'спасибо_за_обращение.html')
-
+def landing(req):
+    return render(req, 'tarify_dum/tarif_laiding.html' )
 
 @async_to_sync
 async def send_to_telegram(request):
