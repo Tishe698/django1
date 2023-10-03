@@ -14,7 +14,7 @@ def uspeh(req):
 
 
 def landing(req):
-    return render(req, 'tarif_laiding.html')
+    return render(req, 'dum/tarif_laiding.html')
 
 
 @async_to_sync
