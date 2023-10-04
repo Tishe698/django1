@@ -15,6 +15,12 @@ def uspeh(req):
 
 def landing(req):
     return render(req, 'dum/tarif_laiding.html')
+def korparativ(req):
+    return render(req, 'dum/tarif_korparativ_sait.html')
+def online_shop(req):
+    return render(req, 'dum/online_shop.html')
+
+
 
 
 @async_to_sync

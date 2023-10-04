@@ -146,3 +146,91 @@
     width: 824px;
     max-width: 100%;
 }
+
+@media (max-width: 992px) {
+    .flex_belog_blocka {
+        display: flex;
+        gap: 44px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.landing {
+        background: url("../tarif_dum/img/landing.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog_korparatif_kartinka img {
+        width: 550px;
+        max-width: 100%;
+    }
+
+    .flex_belog_blocka {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_belog_blocka_tarif {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moshno_oruzh {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 660px) {
+    .moshno_oruzh {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 562px) {
+    .moshno_oruzh {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: left;
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+    .zagolovok_1bloka {
+        font-size: 19px;
+    }
+
+    .nazvaniy_zagolovok {
+        font-size: 18px;
+    }
+
+    .perv_text {
+        font-size: 16px;
+    }
+
+    .vtor_text {
+        font-size: 16px;
+    }
+
+    .moshno_oruzh_2 {
+        text-align: left;
+        font-size: 21px;
+    }
+
+    .zagolovok_belogo_blocka {
+        font-size: 25px;
+    }
+
+    .text_razrab_landing {
+        font-size: 17px;
+    }
+}
+

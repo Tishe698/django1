@@ -50,7 +50,9 @@ color: black;
     font-size: 14px;
     margin-top: 4%;
 }
-
+.footer_logo{
+        -webkit-tap-highlight-color: transparent;
+}
 @media (max-width: 600px) {
     footer {
         margin-top: 3%;

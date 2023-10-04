@@ -184,8 +184,9 @@ header {
 
 .logo {
     position: fixed;
-    padding-left: 5px;
     top: 10px;
+    left: 1px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .logo img {

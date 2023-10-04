@@ -6,52 +6,54 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
 </head>
-        <header>
-            <nav class="close" role="navigation">
-                <div class="logo"><img src="{% static 'img/logotip.png' %}" alt=""></div>
-                <div id="menuToggle">
-                    <input type="checkbox"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a href="#">
-                            <li class="lishki">Преимущества</li>
-                        </a>
-                        <a href="#">
-                            <li class="lishki">Цены</li>
-                        </a>
-                        <a href="#">
-                            <li class="lishki">Этапы работы</li>
-                        </a>
-                        <a href="#">
-                            <li class="zakaz_sait_burger forma_otkroisy">Заказать сайт</li>
-                        </a>
-                    </ul>
+<header>
+    <nav class="close" role="navigation">
+        <a class="logo" href="{% url 'home' %}">
+            <img src="{% static 'img/logotip.png' %}" alt="">
+        </a>
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#">
+                    <li class="lishki">Преимущества</li>
+                </a>
+                <a href="#">
+                    <li class="lishki">Цены</li>
+                </a>
+                <a href="#">
+                    <li class="lishki">Этапы работы</li>
+                </a>
+                <a href="#">
+                    <li class="zakaz_sait_burger forma_otkroisy">Заказать сайт</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="open">
+        <div class="header_open">
+            <a class="foto" href="{% url 'home' %}">
+                <img src="{% static 'img/logotip.png' %}" alt="">
+            </a>
+            <div class="links">
+                <div class="preimshestvo">
+                    Преимущества
                 </div>
-            </nav>
-            <div class="open">
-                <div class="header_open">
-                    <div class="foto">
-                        <img src="{% static 'img/logotip.png' %}" alt="">
-                    </div>
-                    <div class="links">
-                        <div class="preimshestvo">
-                            Преимущества
-                        </div>
-                        <div class="etapy">
-                            Этапы работы
-                        </div>
-                        <div class="cena">
-                            Цены
-                        </div>
-                    </div>
-                    <div class="links2">
-                        <div class="zakaz_sait forma_otkroisy">
-                            Заказать сайт
-                        </div>
-                    </div>
+                <div class="etapy">
+                    Этапы работы
+                </div>
+                <div class="cena">
+                    Цены
                 </div>
             </div>
-        </header>
+            <div class="links2">
+                <div class="zakaz_sait forma_otkroisy">
+                    Заказать сайт
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 </html>

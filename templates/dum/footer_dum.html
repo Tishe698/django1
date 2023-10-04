@@ -1,5 +1,5 @@
 {% load static %}
-<footer>
+<footer class="online korparativ landing">
     <div class="container_footer">
         <div class="flex1">
             <div class="nav_footer">
@@ -7,9 +7,9 @@
                 <a href="#">Этапы работы</a>
                 <a href="#">Цены</a>
             </div>
-            <div class="footer_logo">
+            <a class="footer_logo" href="{% url 'home' %}">
                 <img src="{% static 'img/logoтип1.png' %}" alt="">
-            </div>
+            </a>
             <div class="obsudit_proekt forma_otkroisy">
                 Обсудить проект
             </div>

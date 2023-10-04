@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.container_dum {
+    background: url("../tarif_dum/img/shop/fon_shop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 289vh;
+}
+
+.kluch_kompanent_zagolov {
+    color: #585858;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.kluch_kompanent_text {
+    color: #585858;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.margin_shop_lich_kabinet {
+    margin-bottom: 45px;
+}
+.margin_shop_kartinki{
+    margin-top: 30px;
+}
+.flex_poloski{
+display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+.moshno_oruzh {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 92%;
+    letter-spacing: 0.3125rem;
+    width: 557px;
+    max-width: 100%;
+}
+
+.block_1_dum {
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text_1_dum {
+    width: 76%;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+.zagolovok_1bloka {
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.nazvaniy_zagolovok {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 6%;
+}
+
+.perv_text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8%;
+    width: 885px;
+    max-width: 100%;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+.vtor_text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 100%;
+    width: 578px;
+    line-height: 146%;
+    letter-spacing: 1px;
+}
+
+.moshno_oruzh_2 {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 92%;
+    letter-spacing: 0.3125rem;
+    width: 372px;
+    max-width: 100%;
+    margin-top: 7%;
+}
+
+.belyi_container {
+    background-color: white;
+    min-height: 120vh;
+}
+
+.block1_belyi {
+    width: 77%;
+    margin: 0 auto;
+    padding-top: 79px;
+}
+
+.zagolovok_belogo_blocka {
+    color: #585858;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.flex_belog_blocka {
+    display: flex;
+    gap: 20px;
+}
+
+.karinka_belog_block img {
+    width: 336px;
+    max-width: 100%;
+}
+
+.pervai_poloska {
+    width: 61%;
+    height: 1px;
+    background: #585858;
+    margin-top: 30px;
+}
+
+.vtor_poloska {
+    width: 34%;
+    height: 1px;
+    background: #585858;
+    margin-top: 20px;
+}
+
+.block2_belyi {
+    width: 77%;
+    margin: 0 auto;
+
+}
+.sprava_shop{
+
+}
+.text_razrab_landing {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 150%;
+    letter-spacing: 0.05813rem;
+    color: #585858;
+    margin-top: 20px;
+    width: 824px;
+    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+    .flex_belog_blocka {
+        display: grid;
+        gap: 44px;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, minmax(250px, 1.5fr));
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        background: url("../tarif_dum/img/shop/fon_shop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .karinka_belog_block img {
+        width: 270px;
+        max-width: 100%;
+    }
+
+    .blog_korparatif_kartinka img {
+        width: 550px;
+        max-width: 100%;
+    }
+
+    .flex_belog_blocka {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_belog_blocka_tarif {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moshno_oruzh {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 660px) {
+    .moshno_oruzh {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 562px) {
+    .moshno_oruzh {
+        color: rgba(255, 255, 255, 0.50);
+        text-align: left;
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+    .zagolovok_1bloka {
+        font-size: 19px;
+    }
+
+    .nazvaniy_zagolovok {
+        font-size: 18px;
+    }
+
+    .perv_text {
+        font-size: 16px;
+    }
+
+    .vtor_text {
+        font-size: 16px;
+    }
+
+    .moshno_oruzh_2 {
+        text-align: left;
+        font-size: 21px;
+    }
+
+    .zagolovok_belogo_blocka {
+        font-size: 25px;
+    }
+
+    .text_razrab_landing {
+        font-size: 17px;
+    }
+}
+
