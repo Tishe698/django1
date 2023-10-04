@@ -4,7 +4,15 @@
     margin: 0;
     font-family: Montserrat;
 }
-
+.glavn_str_shop{
+    display: none;
+}
+.glavn_str{
+    display: block;
+}
+.nav_footer a.glavn_str {
+    color: gray;
+}
 .container_dum {
     background: url("../tarif_dum/img/shop/fon_shop.png");
     background-repeat: no-repeat;

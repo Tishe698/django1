@@ -3,14 +3,9 @@
     <div class="container_footer">
         <div class="flex1">
             <div class="nav_footer">
-                <a href="#">Преимущества</a>
-                <a href="#">Этапы работы</a>
-                <a href="#">Цены</a>
-            </div>
-            <div class="nav_footer">
-                <a href="#">Лендинг-пейдж</a>
-                <a href="#">Многостраничный сайт</a>
-                <a href="#">Интернет-магазин</a>
+                <a href="{% url 'landing' %}">Лендинг-пейдж</a>
+                <a href="{% url 'korparativ' %}">Многостраничный сайт</a>
+                <a href="{% url 'online_shop' %}">Интернет-магазин</a>
             </div>
             <a class="footer_logo" href="{% url 'home' %}">
                 <img src="{% static 'img/logoтип1.png' %}" alt="">

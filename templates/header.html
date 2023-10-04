@@ -17,13 +17,13 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="#">
+                <a href="{% url 'home' %}#preimyshestvo">
                     <li class="lishki">Преимущества</li>
                 </a>
-                <a href="#">
+                <a href="#tariphy">
                     <li class="lishki">Цены</li>
                 </a>
-                <a href="#">
+                <a href="#etapy">
                     <li class="lishki">Этапы работы</li>
                 </a>
                 <a href="#">
@@ -38,15 +38,15 @@
                 <img src="{% static 'img/logotip.png' %}" alt="">
             </a>
             <div class="links">
-                <div class="preimshestvo">
+                <a class="preimshestvo" href="{% url 'home' %}#preimyshestvo">
                     Преимущества
-                </div>
-                <div class="etapy">
+                </a>
+                <a class="etapy" href="#etapy">
                     Этапы работы
-                </div>
-                <div class="cena">
+                </a>
+                <a class="cena" href="#tariphy">
                     Цены
-                </div>
+                </a>
             </div>
             <div class="links2">
                 <div class="zakaz_sait forma_otkroisy">

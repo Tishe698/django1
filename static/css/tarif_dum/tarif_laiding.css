@@ -73,7 +73,15 @@
     line-height: 146%;
     letter-spacing: 1px;
 }
-
+.glavn_str_landing{
+    display: none;
+}
+.glavn_str{
+    display: block;
+}
+.nav_footer a.glavn_str {
+    color: gray;
+}
 .moshno_oruzh_2 {
     color: rgba(255, 255, 255, 0.50);
     text-align: right;

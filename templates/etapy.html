@@ -13,158 +13,157 @@
 </head>
 
 <body>
-    <div class="section3">
-        <div class="etap_planirov">
-            <p>Этапы разработки сайта</p>
+<div class="section3" id="etapy">
+    <div class="etap_planirov">
+        <p>Этапы разработки сайта</p>
+    </div>
+    <div class="container_section3 animatable fadeInUp">
+        <div class="box_border width_border">
+            <div class="zagolovok_sect3">
+                Планирование
+            </div>
+            <div class="karinka_sect3">
+                <img src="{% static 'img/этапы_разработки/планирование и анализ 1.png' %}" alt="">
+            </div>
+            <div class="content_sect3">
+                • Определение целей и требований сайта <br>
+                • Исследование целевой аудитории и конкурентов<br>
+                • Создание структуры сайта и его функциональных возможностей
+            </div>
         </div>
-        <div class="container_section3 animatable fadeInUp">
-            <div class="box_border width_border">
-                <div class="zagolovok_sect3">
-                    Планирование
+        <div class="box_border2 width_border padding2etap animatable fadeInUp">
+            <div class="zagolovok_sect3">
+                Проектирование
+            </div>
+            <div class="flex_boxa">
+                <div class="karinka_sect3">
+                    <img class="proe" src="{% static 'img/этапы_разработки/Проектирование.png' %}" alt="">
+                </div>
+                <div class="content_sect3 width_conten_proekt">
+                    • Создание структурной схемы и прототипа <br>
+                    • Разработка дизайна: выбор цветовой палитры, шрифтов, графики и визуальных элементов <br>
+                    • Создание макета сайта
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_section3">
+        <div class="box_border3 width_border animatable fadeInUp">
+            <div class="karinka_sect3 razrabotka_kartinka">
+                <img src="{% static 'img/этапы_разработки/разработка.png' %}" alt="">
+            </div>
+            <div class="zagolovok_sect3">
+                Разработка
+            </div>
+            <div class="content_sect3">
+                • Создание фронтенда: верстка макета с использованием HTML, CSS, JavaScript <br>
+                • Разработка бэкенда: создание серверной логики, баз данных, интеграция с API <br>
+                • Разработка дополнительных функций, например, форм обратной связи, поиск и других
+            </div>
+        </div>
+        <div class="box_border width_border testtirov_width animatable fadeInUp">
+            <div class="zagolovok_sect3">
+                Тестирование
+            </div>
+            <div class="karinka_sect3">
+                <img src="{% static 'img/этапы_разработки/тестирование.png' %}" alt="">
+            </div>
+            <div class="content_sect3">
+                • Проведение функционального тестирования для проверки работоспособности всех компонентов <br>
+                • Тестирование совместимости с разными браузерами, устройствами и разрешениями экранов <br>
+                • Проверка безопасности и уязвимостей
+            </div>
+        </div>
+    </div>
+    <div class="container_section3_end">
+        <div class="box_border width_border zapysk_width animatable fadeInUp">
+            <div class="flex_boxa flex_5_etap">
+                <div class="zapusk_box">
+                    <div class="zagolovok_sect3 zagolovok_5_etap_pusk ">
+                        Запуск и Публикация
+                    </div>
+                    <div class="content_sect3 content_zapusk">
+                        <li>Выгрузка сайта на сервер.</li>
+                        <li>Оптимизация производительности сайта: кэширование данных для более быстрой работы сайта
+                        </li>
+                        <li>Регистрация доменного имени, настройка DNS.</li>
+                        <li>Запуск сайта для общего доступа.</li>
+                    </div>
                 </div>
                 <div class="karinka_sect3">
-                    <img src="{% static 'img/этапы_разработки/планирование и анализ 1.png' %}" alt="">
-                </div>
-                <div class="content_sect3">
-                    • Определение целей и требований сайта <br>
-                    • Исследование целевой аудитории и конкурентов<br>
-                    • Создание структуры сайта и его функциональных возможностей
-                </div>
-            </div>
-            <div class="box_border2 width_border padding2etap animatable fadeInUp">
-                <div class="zagolovok_sect3">
-                    Проектирование
-                </div>
-                <div class="flex_boxa">
-                    <div class="karinka_sect3">
-                        <img class="proe" src="{% static 'img/этапы_разработки/Проектирование.png' %}" alt="">
-                    </div>
-                    <div class="content_sect3 width_conten_proekt">
-                        • Создание структурной схемы и прототипа <br>
-                        • Разработка дизайна: выбор цветовой палитры, шрифтов, графики и визуальных элементов <br>
-                        • Создание макета сайта
-                    </div>
+                    <img class="padding_zapusk" src="{% static 'img/этапы_разработки/запуск.png' %}" alt="">
                 </div>
             </div>
         </div>
-        <div class="container_section3">
-            <div class="box_border3 width_border animatable fadeInUp">
-                <div class="karinka_sect3 razrabotka_kartinka">
-                    <img src="{% static 'img/этапы_разработки/разработка.png' %}" alt="">
-                </div>
-                <div class="zagolovok_sect3">
-                    Разработка
-                </div>
-                <div class="content_sect3">
-                    • Создание фронтенда: верстка макета с использованием HTML, CSS, JavaScript <br>
-                    • Разработка бэкенда: создание серверной логики, баз данных, интеграция с API <br>
-                    • Разработка дополнительных функций, например, форм обратной связи, поиск и других
-                </div>
+    </div>
+    <div class="container_section3_end animatable fadeInUp">
+        <div class="box_border  zapysk_width ">
+            <div class="zagolovok_sect3 zagolovok_6_etap_pusk tech_poderjka_padding">
+                Техническая Поддержка и Обслуживание
             </div>
-            <div class="box_border width_border testtirov_width animatable fadeInUp">
-                <div class="zagolovok_sect3">
-                    Тестирование
+            <div class="flex_gifki_box">
+                <div class="tech_kartinka">
+                    <img src="{% static 'img/этапы_разработки/техподержка.png' %}" alt="">
                 </div>
-                <div class="karinka_sect3">
-                    <img src="{% static 'img/этапы_разработки/тестирование.png' %}" alt="">
-                </div>
-                <div class="content_sect3">
-                    • Проведение функционального тестирования для проверки работоспособности всех компонентов <br>
-                    • Тестирование совместимости с разными браузерами, устройствами и разрешениями экранов <br>
-                    • Проверка безопасности и уязвимостей
-                </div>
-            </div>
-        </div>
-        <div class="container_section3_end">
-            <div class="box_border width_border zapysk_width animatable fadeInUp">
-                <div class="flex_boxa flex_5_etap">
-                    <div class="zapusk_box">
-                        <div class="zagolovok_sect3 zagolovok_5_etap_pusk ">
-                            Запуск и Публикация
-                        </div>
-                        <div class="content_sect3 content_zapusk">
-                            <li>Выгрузка сайта на сервер.</li>
-                            <li>Оптимизация производительности сайта: кэширование данных для более быстрой работы сайта
-                            </li>
-                            <li>Регистрация доменного имени, настройка DNS.</li>
-                            <li>Запуск сайта для общего доступа.</li>
+                <div class="gifki_block">
+                    <div class="gif_block">
+                        <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
+                        <div class="boxgif">
+                            <div class="zagolovok_gif">
+                                Резервное копирование:
+                            </div>
+                            <div class="content_gifki">
+                                Создание регулярных резервных копий сайта и баз данных для восстановления в случае
+                                непредвиденных сбоев или потери данных
+                            </div>
                         </div>
                     </div>
-                    <div class="karinka_sect3">
-                        <img class="padding_zapusk" src="{% static 'img/этапы_разработки/запуск.png' %}" alt="">
+                    <div class="gif_block">
+                        <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
+                        <div class="boxgif">
+                            <div class="zagolovok_gif">
+                                Безопасность:
+                            </div>
+                            <div class="content_gifki">
+                                Мониторинг безопасности и принятие мер для предотвращения взломов и атак.
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container_section3_end animatable fadeInUp">
-            <div class="box_border  zapysk_width ">
-                <div class="zagolovok_sect3 zagolovok_6_etap_pusk tech_poderjka_padding">
-                    Техническая Поддержка и Обслуживание
-                </div>
-                <div class="flex_gifki_box">
-                    <div class="tech_kartinka">
-                        <img src="{% static 'img/этапы_разработки/техподержка.png' %}" alt="">
+                    <div class="gif_block">
+                        <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
+                        <div class="boxgif">
+                            <div class="zagolovok_gif">
+                                Поддержка пользователей:
+                            </div>
+                            <div class="content_gifki">
+                                Предоставление технической поддержки для пользователей, включая решение проблем,
+                                ответы
+                                на
+                                вопросы и помощь в использовании функций сайта.
+                            </div>
+                        </div>
                     </div>
-                    <div class="gifki_block">
-                        <div class="gif_block">
-                            <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
-                            <div class="boxgif">
-                                <div class="zagolovok_gif">
-                                    Резервное копирование:
-                                </div>
-                                <div class="content_gifki">
-                                    Создание регулярных резервных копий сайта и баз данных для восстановления в случае
-                                    непредвиденных сбоев или потери данных
-                                </div>
+                    <div class="gif_block">
+                        <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
+                        <div class="boxgif">
+                            <div class="zagolovok_gif">
+                                Управление платформой:
+                            </div>
+                            <div class="content_gifki">
+                                Управление сервером, доменами и другими техническими аспектами для обеспечения
+                                бесперебойной работы сайта.
                             </div>
                         </div>
-                        <div class="gif_block">
-                            <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
-                            <div class="boxgif">
-                                <div class="zagolovok_gif">
-                                    Безопасность:
-                                </div>
-                                <div class="content_gifki">
-                                    Мониторинг безопасности и принятие мер для предотвращения взломов и атак.
-                                </div>
+                    </div>
+                    <div class="gif_block">
+                        <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
+                        <div class="boxgif">
+                            <div class="zagolovok_gif">
+                                Обновление и адаптация дизайна:
                             </div>
-                        </div>
-                        <div class="gif_block">
-                            <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
-                            <div class="boxgif">
-                                <div class="zagolovok_gif">
-                                    Поддержка пользователей:
-                                </div>
-                                <div class="content_gifki">
-                                    Предоставление технической поддержки для пользователей, включая решение проблем,
-                                    ответы
-                                    на
-                                    вопросы и помощь в использовании функций сайта.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gif_block">
-                            <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
-                            <div class="boxgif">
-                                <div class="zagolovok_gif">
-                                    Управление платформой:
-                                </div>
-                                <div class="content_gifki">
-                                    Управление сервером, доменами и другими техническими аспектами для обеспечения
-                                    бесперебойной работы сайта.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gif_block">
-                            <img src="{% static 'img/этапы_разработки/галочка.gif' %}" alt="">
-                            <div class="boxgif">
-                                <div class="zagolovok_gif">
-                                    Обновление и адаптация дизайна:
-                                </div>
-                                <div class="content_gifki">
-                                    Внесение изменений в дизайн сайта, чтобы он оставался современным и соответствовал
-                                    последним трендам.
-                                </div>
+                            <div class="content_gifki">
+                                Внесение изменений в дизайн сайта, чтобы он оставался современным и соответствовал
+                                последним трендам.
                             </div>
                         </div>
                     </div>
@@ -172,6 +171,7 @@
             </div>
         </div>
     </div>
+</div>
 
 </body>
 
