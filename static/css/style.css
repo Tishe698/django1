@@ -101,7 +101,7 @@ body {
     display: flex;
     gap: 15px;
     width: 400px;
-    padding-top: 12%;
+    padding-top: 40px;
 }
 
 .zapolnyt_formy {
@@ -214,6 +214,30 @@ body {
     justify-items: center;
     padding-top: 3%;
 }
+
+@media (min-width: 992px) {
+    .conteiner_section1 {
+        width: 619px;
+    }
+
+    .zapolny_formy_block {
+        width: 600px;
+
+    }
+
+    .zapolnyt_formy {
+        font-size: 25px;
+        width: 292px;
+        height: 72px;
+    }
+
+    .bazovay_adaptacia {
+        font-size: 20px;
+        width: 273px;
+        height: 74px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .container {

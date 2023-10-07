@@ -122,6 +122,7 @@
     margin: 0 auto;
     font-family: Montserrat;
     padding-top: 3%;
+    padding-bottom: 40px;
 }
 
 .cvet_tarifa {
@@ -193,7 +194,7 @@
 .podrobnee_tariphy2 {
     display: flex;
     justify-content: center;
-    padding: 20px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .podrobnee_tariphy2 p {
