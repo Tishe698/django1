@@ -4,15 +4,19 @@
     margin: 0;
     font-family: Montserrat;
 }
-.glavn_str_korporativ{
+
+.glavn_str_korporativ {
     display: none;
 }
-.glavn_str{
+
+.glavn_str {
     display: block;
 }
+
 .nav_footer a.glavn_str {
     color: gray;
 }
+
 .container_dum {
     background: url("../tarif_dum/img/korparativ/fon_korparativ.png");
     background-repeat: no-repeat;
@@ -179,11 +183,21 @@
 .blog_korparatif_kartinka img {
     width: 37vw;
 }
+
+@media (min-width: 1601px) {
+    .blog_korparatif_kartinka img {
+        width: 550px;
+        max-width: 100%;
+    }
+}
+
+
 @media (max-width: 1600px) {
     .blog_korparatif_kartinka img {
-    width: 37vw;
+        width: 37vw;
+    }
 }
-}
+
 @media (max-width: 768px) {
     footer.korparativ {
         background: url("../tarif_dum/img/korparativ/fon_korparativ.png");
@@ -255,7 +269,7 @@
 
     .zagolovok_belogo_blocka {
         font-size: 25px;
-            margin-top: 30px;
+        margin-top: 30px;
 
     }
 
@@ -263,4 +277,5 @@
         font-size: 17px;
     }
 }
+
 
