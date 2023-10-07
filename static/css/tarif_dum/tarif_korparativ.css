@@ -189,6 +189,14 @@
         width: 550px;
         max-width: 100%;
     }
+
+    .container_dum {
+        min-height: 223vh;
+    }
+
+    footer {
+        min-height: 26vh;
+    }
 }
 
 

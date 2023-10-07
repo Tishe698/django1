@@ -182,7 +182,16 @@ display: flex;
     width: 824px;
     max-width: 100%;
 }
+@media (min-width: 1601px) {
 
+    .container_dum {
+        min-height: 223vh;
+    }
+
+    footer {
+        min-height: 26vh;
+    }
+}
 @media (max-width: 992px) {
     .flex_belog_blocka {
         display: grid;
