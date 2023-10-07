@@ -6,8 +6,8 @@
     padding-top: 2em;
 }
 
-.etap_planirov p {
-display: flex;
+.etap_planirov h1 {
+    display: flex;
     justify-content: center;
     padding: 10px;
     border: 2px solid #FFF;
@@ -88,7 +88,6 @@ display: flex;
     object-fit: contain;
     width: 100%;
 }
-
 
 
 .content_sect3 {
@@ -177,7 +176,6 @@ display: flex;
     }
 
 
-
     .padding_zapusk {
         padding: 0;
     }
@@ -224,7 +222,6 @@ display: flex;
 }
 
 
-
 @media (max-width: 992px) {
 
 
@@ -249,6 +246,16 @@ display: flex;
     }
 
     .etap_planirov {
-        width: 17em;
+        width: 95%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 1em;
     }
+}
+@media (max-width: 600px) {
+.etap_planirov h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
 }

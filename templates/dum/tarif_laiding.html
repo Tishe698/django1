@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/tarif_dum/tarif_laiding.css' %}">
     <link rel="stylesheet" href="{% static 'css/tarif_dum/footer_dum.css' %}">
-        <link rel="stylesheet" href="{% static 'css/forma.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forma.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tarif_dum/images.css' %}">
 </head>
 <body>
 <div class="container_dum">
@@ -41,7 +42,7 @@
             которое вы хотите от него получить. Это может быть покупка продукта, подписка на рассылку, заполнение формы
             запроса или любое другое действие, которое приближает вас к вашей цели. Основная идея лендинга заключается в
             том, чтобы предложить посетителю неотразимое предложение (offer), которое он не сможет отклонить.
-
+{% include 'dum/images.html' %}
         </div>
     </div>
     <div class="block_1_dum">
@@ -76,13 +77,14 @@
                     готовы превратить вашу идею в мощное маркетинговое оружие.
                 </div>
             </div>
-
         </div>
     </div>
     {% include 'dum/footer_dum.html' %}
+    {% include 'dum/images.html' %}
 </div>
 {% include 'forma.html' %}
 <script src="{% static 'js/форма.js' %}"></script>
 <script src="{% static 'js/poyzvlenie_forms.js' %}"></script>
+<script src="{% static 'js/images.js' %}"></script>
 </body>
 </html>

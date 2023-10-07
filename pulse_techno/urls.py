@@ -9,4 +9,5 @@ urlpatterns = [
     path('landing', landing, name='landing'),
     path('korparativ', korparativ, name='korparativ'),
     path('online_shop', online_shop, name='online_shop'),
+
 ]

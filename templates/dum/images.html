@@ -1,0 +1,18 @@
+<div class="Block1">
+    {% for image in images %}
+        <div class="image-container">
+            <img src="{{ image.image1.url }}" alt="Изображение" class="image-click" data-modal-id="modal-{{ forloop.counter }}">
+            <span class="plus-icon">+</span>
+        </div>
+
+        <div class="image-modal" id="modal-{{ forloop.counter }}">
+            <div class="modal-content">
+                <img src="{{ image.image2.url }}" alt="Второе изображение" class="linked-image-click">
+            </div>
+        </div>
+        <div class="opisanie_dobavlenie">
+            {{ image.description }}
+        </div>
+    {% endfor %}
+</div>
+

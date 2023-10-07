@@ -1,0 +1,78 @@
+/* Стили для изображения */
+.image-container {
+    cursor: pointer;
+    width: 205px;
+    position: relative;
+    transition: filter 0.3s ease;
+}
+
+/* Стили для отображения изображения в полном размере */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.image-container img {
+    width: 205px;
+    height: 302px;
+    object-fit: cover;
+}
+
+/* Стили для затемнения и плюсика */
+.plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    padding: 4px 12px;
+    opacity: 0;
+    transition: opacity 0.2s; /* Анимация для прозрачности */
+}
+
+/* Белый фон */
+.white-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1; /* Помещаем белый фон на задний план */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Анимация для прозрачности */
+}
+
+.image-container:hover {
+    filter: brightness(70%); /* Затемнение изображения при наведении */
+}
+
+.image-container:hover .plus-icon {
+    opacity: 1; /* Показать плюсик при наведении */
+}
+
+.image-container:hover .white-background {
+    opacity: 0; /* Скрываем белый фон при наведении */
+}

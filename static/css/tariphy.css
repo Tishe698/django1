@@ -276,7 +276,9 @@
         align-items: center;
         text-align: center;
     }
-
+.tariphy{
+    font-size: 18px;
+}
     .content_tariphy2 {
         padding: 29px 7px;
         font-size: 14px;
