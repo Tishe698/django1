@@ -44,6 +44,20 @@
     display: none;
 }
 
+@media (min-width: 1701px) {
+    .svyzatsy_knopka {
+        padding: 1vw;
+        width: 11vw;
+        font-size: 1.2vw;
+    }
+
+    .svyz_otlich_proekt {
+        font-size: 2.5vw;
+        width: 37vw;
+    }
+
+}
+
 @media (max-width: 992px) {
     .container_svyz_snami {
         width: 75%;

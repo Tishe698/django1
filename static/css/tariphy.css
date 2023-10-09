@@ -240,6 +240,97 @@
     }
 }
 
+@media (min-width: 1701px) {
+    .tariphy {
+        font-size: 1.5vw;
+
+    }
+
+    .container_grid_terapia {
+        grid-template-columns: repeat(3, 0.2fr);
+        height: 38vw;
+    }
+
+    .content_tariphy {
+        font-size: 1.5vw;
+
+    }
+
+    .zagolovok_tariphy {
+        height: 6vw;
+    }
+
+    .container_tariphy {
+        width: 24vw;
+        height: 31vw;
+    }
+
+    .content_tariphy2 {
+        padding: 1vw 3vw;
+        font-size: 1.2vw;
+    }
+
+    .podrobnee_dum {
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 1.1vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .cena_tariphy {
+        font-size: 1.4vw;
+    }
+
+    .cvet_tarifa {
+        height: 28vw;
+    }
+
+    .podrobnee_tariphy p {
+        padding: 0.9vw 1.6vw;
+        font-size: 1.3vw;
+    }
+
+    .paket_indidualnyi {
+        width: 57vw;
+    }
+
+    .zagolovok_paket_individ {
+        height: 5vw;
+        font-size: 1.5vw;
+    }
+
+    .bazov_funcii {
+        font-size: 1.2vw;
+        width: 56vw;
+    }
+
+    .kartinka_paket_individ img {
+        width: 14vw;
+    }
+
+    .flex_paket_individ_text {
+        font-size: 1.2vw;
+        width: 27vw;
+    }
+
+    .soimost_zapros {
+        font-size: 1.2vw;
+        width: 52vw;
+    }
+
+    .podrobnee_tariphy2 p {
+        padding: 1vw 30px;
+        font-size: 1.2vw;
+    }
+
+
+}
+
+
 @media (max-width: 992px) {
     .container_grid_terapia {
         align-items: center;
@@ -252,7 +343,7 @@
     }
 
     .container_tariphy {
-            margin-bottom: 59px;
+        margin-bottom: 59px;
         width: 366px;
         max-width: 100%;
         height: 450px;
@@ -277,9 +368,11 @@
         align-items: center;
         text-align: center;
     }
-.tariphy{
-    font-size: 18px;
-}
+
+    .tariphy {
+        font-size: 18px;
+    }
+
     .content_tariphy2 {
         padding: 29px 7px;
         font-size: 14px;

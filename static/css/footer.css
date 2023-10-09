@@ -35,7 +35,7 @@ footer {
 }
 
 .obsudit_proekt {
-color: black;
+    color: black;
     background-color: white;
     padding: 22px;
     display: flex;
@@ -48,11 +48,39 @@ color: black;
     color: white;
     text-align: center;
     font-size: 14px;
-    margin-top: 4%;
+    margin-top: 2%;
 }
-.footer_logo{
-        -webkit-tap-highlight-color: transparent;
+
+.footer_logo {
+    -webkit-tap-highlight-color: transparent;
 }
+
+@media (min-width: 1701px) {
+
+    footer {
+        min-height: auto;
+    }
+
+    .obsudit_proekt {
+        padding: 1vw;
+        height: 2.5vw;
+        font-size: 1vw;
+    }
+
+    .footer_logo img {
+        width: 6vw;
+        max-width: 100%;
+    }
+
+    .nav_footer {
+        gap: 1vw;
+        font-size: 1vw;
+    }
+        .text_footer {
+    font-size: 1vw;
+}
+}
+
 @media (max-width: 600px) {
     footer {
         margin-top: 3%;

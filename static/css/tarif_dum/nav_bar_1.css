@@ -246,6 +246,28 @@ header {
     justify-content: space-between;
 }
 
+@media (min-width: 1701px) {
+    .links {
+        font-size: 0.9vw;
+    }
+
+    .links2 {
+        width: 10vw;
+        font-size: 0.9vw;
+    }
+
+    .zakaz_sait {
+        height: 3vw;
+        width: 9vw;
+    }
+    .header_open {
+    padding-top: 2vw;
+}
+    .foto img {
+    width: 5vw;
+}
+}
+
 @media (max-width: 767px) {
     .close {
         display: flex;

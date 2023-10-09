@@ -5,7 +5,7 @@
 }
 
 footer {
-    min-height: 50vh;
+    min-height: auto;
 }
 
 .container_footer {
@@ -57,13 +57,42 @@ footer {
     font-size: 16px;
     margin-top: 13px;
 }
+@media (min-width: 1701px) {
+    .text_footer {
+    font-size: 1vw;
+}
+        footer {
+        min-height: auto;
+    }
 
+    .obsudit_proekt {
+        padding: 1vw;
+        height: 2.5vw;
+        font-size: 1vw;
+    }
+
+    .footer_logo img {
+        width: 6vw;
+        max-width: 100%;
+    }
+
+    .nav_footer {
+        gap: 1vw;
+        font-size: 1vw;
+    }
+
+
+}
 @media (max-width: 600px) {
 
     .flex1 {
         flex-direction: column;
         gap: 10px;
     }
+    .nav_footer {
+    gap: 1vw;
+    font-size: 1vw;
+}
 
     .nav_footer {
         align-items: center;

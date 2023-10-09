@@ -5,6 +5,12 @@
     font-family: Montserrat;
 }
 
+footer.korparativ {
+    background: url("../tarif_dum/img/korparativ/footer_korparativ.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .glavn_str_korporativ {
     display: none;
 }
@@ -21,7 +27,7 @@
     background: url("../tarif_dum/img/korparativ/fon_korparativ.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 289vh;
+    min-height: auto;
 }
 
 .moshno_oruzh {
@@ -184,33 +190,78 @@
     width: 37vw;
 }
 
-@media (min-width: 1601px) {
-    .blog_korparatif_kartinka img {
-        width: 550px;
-        max-width: 100%;
-    }
+@media (min-width: 1701px) {
+    .kartika_korparativ img {
+    width: 37vw;
+    max-width: 100%;
+}
 
     .container_dum {
-        min-height: 223vh;
+        min-height: auto;
+    }
+
+
+    .moshno_oruzh {
+        font-size: 3vw;
+        width: 36vw;
+        padding-top: 2vw;
+    }
+
+    .zagolovok_1bloka {
+        font-size: 2vw;
+
+    }
+
+    .perv_text {
+        font-size: 2vw;
+        width: 58vw;
+
+    }
+
+    .vtor_text {
+        font-size: 2vw;
+        width: 46vw;
+
+    }
+
+    .moshno_oruzh_2 {
+        font-size: 2vw;
+        width: 17vw;
+    }
+
+    .zagolovok_belogo_blocka {
+        font-size: 2vw;
+    }
+
+    .karinka_belog_block img {
+        width: 18vw;
+    }
+
+    .text_razrab_landing {
+        font-size: 1.5vw;
+        width: 55vw;
     }
 
     footer {
-        min-height: 26vh;
+        height: auto;
     }
-}
 
+    .nazvaniy_zagolovok {
+        font-size: 1.4vw;
+    }
 
-@media (max-width: 1600px) {
     .blog_korparatif_kartinka img {
         width: 37vw;
     }
 }
 
+
 @media (max-width: 768px) {
     footer.korparativ {
-        background: url("../tarif_dum/img/korparativ/fon_korparativ.png");
+        background: url("../tarif_dum/img/korparativ/footer_korparativ.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .blog_korparatif_kartinka img {

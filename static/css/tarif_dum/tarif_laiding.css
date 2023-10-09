@@ -6,10 +6,16 @@
 }
 
 .container_dum {
-    background: url("../tarif_dum/img/landing.png");
+    background: url(../tarif_dum/img/landing.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 289vh;
+    min-height: auto;
+}
+
+footer.landing {
+    background: url("../tarif_dum/img/landing_footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .moshno_oruzh {
@@ -73,15 +79,19 @@
     line-height: 146%;
     letter-spacing: 1px;
 }
-.glavn_str_landing{
+
+.glavn_str_landing {
     display: none;
 }
-.glavn_str{
+
+.glavn_str {
     display: block;
 }
+
 .nav_footer a.glavn_str {
     color: gray;
 }
+
 .moshno_oruzh_2 {
     color: rgba(255, 255, 255, 0.50);
     text-align: right;
@@ -98,7 +108,7 @@
 
 .belyi_container {
     background-color: white;
-    min-height: 120vh;
+    min-height: auto;
 }
 
 .block1_belyi {
@@ -154,16 +164,60 @@
     width: 824px;
     max-width: 100%;
 }
-@media (min-width: 1601px) {
 
-    .container_dum {
-        min-height: 223vh;
+@media (min-width: 1701px) {
+
+    .moshno_oruzh {
+        font-size: 3vw;
+        width: 30vw;
+        padding-top: 2vw;
+    }
+
+    .zagolovok_1bloka {
+        font-size: 2vw;
+
+    }
+
+    .perv_text {
+        font-size: 2vw;
+        width: 58vw;
+
+    }
+
+    .vtor_text {
+        font-size: 2vw;
+        width: 46vw;
+
+    }
+
+    .moshno_oruzh_2 {
+        font-size: 2vw;
+        width: 17vw;
+    }
+
+    .zagolovok_belogo_blocka {
+        font-size: 2vw;
+    }
+
+    .karinka_belog_block img {
+        width: 18vw;
+    }
+
+    .text_razrab_landing {
+        font-size: 1.5vw;
+        width: 55vw;
     }
 
     footer {
-        min-height: 26vh;
+        height: auto;
     }
+
+    .nazvaniy_zagolovok {
+        font-size: 1.4vw;
+    }
+
 }
+
 @media (max-width: 992px) {
     .flex_belog_blocka {
         display: flex;
@@ -175,9 +229,10 @@
 
 @media (max-width: 768px) {
     footer.landing {
-        background: url("../tarif_dum/img/landing.png");
+        background: url("../tarif_dum/img/landing_footer.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     .blog_korparatif_kartinka img {

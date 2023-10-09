@@ -156,6 +156,7 @@
     font-size: 11px;
 }
 
+
 @media (min-width: 992px) {
     .container_section3 {
         display: grid;
@@ -221,6 +222,102 @@
 
 }
 
+@media (min-width: 1701px) {
+    .etap_planirov {
+        width: 56vw;
+        font-size: 1.2vw;
+    }
+
+    .container_section3 {
+        grid-template-columns: repeat(2, 0.4fr);
+    }
+
+    .box_border {
+        width: 30vw;
+    }
+
+    .zagolovok_sect3 {
+        font-size: 1.5vw;
+
+    }
+
+    .karinka_sect3 img {
+        width: 21vw;
+    }
+
+    .content_sect3 {
+        font-size: 1.1vw;
+    }
+
+    .content_sect3 {
+        font-size: 1.1vw;
+    }
+
+    .karinka_sect3 img {
+        width: 21vw;
+    }
+
+    .box_border2 {
+        width: 42vw;
+    }
+
+    .testtirov_width {
+        width: 36vw;
+        padding: 10px;
+    }
+
+    .razrabotka_kartinka {
+        width: 27vw;
+    }
+
+
+    .razrabotka_kartinka img {
+        width: 28vw;
+    }
+
+    .box_border3 {
+        width: 36vw;
+    }
+
+    .kartinka_testirov img {
+        width: 33vw;
+    }
+
+    .zapusk_kartinka img {
+        width: 31vw;
+    }
+
+    .zapysk_width {
+        width: 73vw;
+    }
+
+    .zagolovok_5_etap_pusk {
+        margin-left: 3vw;
+
+    }
+
+    .content_zapusk {
+        width: 29vw;
+    }
+
+    .tech_kartinka {
+        width: 32vw;
+    }
+.tech_kartinka img {
+    width: 38vw;
+}
+
+    .gif_block img {
+        width: 1.3vw;
+    }
+    .zagolovok_gif {
+    font-size: 1.2vw;
+}
+    .content_gifki {
+    font-size: 1vw;
+}
+
+}
 
 @media (max-width: 992px) {
 
@@ -252,10 +349,11 @@
         margin-bottom: 1em;
     }
 }
+
 @media (max-width: 600px) {
-.etap_planirov h1 {
-    font-size: 24px;
-    text-align: center;
-}
+    .etap_planirov h1 {
+        font-size: 24px;
+        text-align: center;
+    }
 
 }

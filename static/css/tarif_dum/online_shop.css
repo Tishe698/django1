@@ -4,20 +4,31 @@
     margin: 0;
     font-family: Montserrat;
 }
-.glavn_str_shop{
+
+.glavn_str_shop {
     display: none;
 }
-.glavn_str{
+
+footer {
+    background: url("../tarif_dum/img/shop/footershop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.glavn_str {
     display: block;
 }
+
 .nav_footer a.glavn_str {
     color: gray;
 }
+
 .container_dum {
-    background: url("../tarif_dum/img/shop/fon_shop.png");
+    background: url("img/shop/fon1shop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 289vh;
+    min-height: auto;
 }
 
 .kluch_kompanent_zagolov {
@@ -37,15 +48,18 @@
 .margin_shop_lich_kabinet {
     margin-bottom: 45px;
 }
-.margin_shop_kartinki{
+
+.margin_shop_kartinki {
     margin-top: 30px;
 }
-.flex_poloski{
-display: flex;
+
+.flex_poloski {
+    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-end;
 }
+
 .moshno_oruzh {
     color: rgba(255, 255, 255, 0.50);
     text-align: right;
@@ -117,14 +131,14 @@ display: flex;
     font-weight: 700;
     line-height: 92%;
     letter-spacing: 0.3125rem;
-    width: 372px;
+    width: 600px;
     max-width: 100%;
     margin-top: 7%;
 }
 
 .belyi_container {
     background-color: white;
-    min-height: 120vh;
+    min-height: auto;
 }
 
 .block1_belyi {
@@ -169,9 +183,11 @@ display: flex;
     margin: 0 auto;
 
 }
-.sprava_shop{
+
+.sprava_shop {
 
 }
+
 .text_razrab_landing {
     font-weight: 300;
     font-size: 23px;
@@ -182,16 +198,85 @@ display: flex;
     width: 824px;
     max-width: 100%;
 }
-@media (min-width: 1601px) {
+
+@media (min-width: 1701px) {
+
+    .kluch_kompanent_zagolov {
+        font-size: 1.5VW;
+        margin-bottom: 1VW;
+    }
+
+    .kluch_kompanent_text {;
+        font-size: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .kartika_korparativ img {
+        width: 37vw;
+        max-width: 100%;
+    }
 
     .container_dum {
-        min-height: 223vh;
+        min-height: auto;
+    }
+
+
+    .moshno_oruzh {
+        font-size: 3vw;
+        width: 36vw;
+        padding-top: 2vw;
+    }
+
+    .zagolovok_1bloka {
+        font-size: 2vw;
+
+    }
+
+    .perv_text {
+        font-size: 2vw;
+        width: 58vw;
+
+    }
+
+    .vtor_text {
+        font-size: 2vw;
+        width: 46vw;
+
+    }
+
+    .moshno_oruzh_2 {
+        font-size: 2vw;
+        width: 25vw;
+    }
+
+
+    .zagolovok_belogo_blocka {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .karinka_belog_block img {
+        width: 18vw;
+    }
+
+    .text_razrab_landing {
+        font-size: 1.5vw;
+        width: 55vw;
     }
 
     footer {
-        min-height: 26vh;
+        height: auto;
+    }
+
+    .nazvaniy_zagolovok {
+        font-size: 1.4vw;
+    }
+
+    .blog_korparatif_kartinka img {
+        width: 37vw;
     }
 }
+
 @media (max-width: 992px) {
     .flex_belog_blocka {
         display: grid;
@@ -205,9 +290,10 @@ display: flex;
 
 @media (max-width: 768px) {
     footer {
-        background: url("../tarif_dum/img/shop/fon_shop.png");
+        background: url("../tarif_dum/img/shop/footershop.png");
         background-repeat: no-repeat;
         background-size: cover;
+            background-position: center;
     }
 
     .karinka_belog_block img {
