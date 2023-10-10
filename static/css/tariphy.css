@@ -246,6 +246,12 @@
 
     }
 
+    .podrobnee_tariphy2 {
+        display: flex;
+        justify-content: center;
+        padding: 1vw 20px 1vw 20px;
+    }
+
     .container_grid_terapia {
         grid-template-columns: repeat(3, 0.2fr);
         height: 38vw;
