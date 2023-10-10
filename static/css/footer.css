@@ -6,7 +6,7 @@
 
 footer {
     background: #1E2329;
-    min-height: 50vh;
+    min-height: auto;
 }
 
 .container_footer {
@@ -26,6 +26,7 @@ footer {
     justify-content: space-between;
     padding-top: 40px;
     align-items: center;
+    width: 95%;
 }
 
 .nav_footer {
@@ -40,7 +41,7 @@ footer {
     padding: 22px;
     display: flex;
     align-items: center;
-    height: 59px;
+    height: 44px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -96,4 +97,8 @@ footer {
         align-items: center;
         gap: 5px;
     }
+        .flex1 {
+
+    width: 100%;
+}
 }

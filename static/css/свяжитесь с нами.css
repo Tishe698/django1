@@ -33,7 +33,7 @@
     color: white;
     background: #2E363E;
     padding: 14px;
-    width: 176px;
+    width: 182px;
     text-align: center;
     font-size: 17px;
     margin-top: 10%;
@@ -47,7 +47,7 @@
 @media (min-width: 1701px) {
     .svyzatsy_knopka {
         padding: 1vw;
-        width: 11vw;
+        width: 14vw;
         font-size: 1.2vw;
     }
 

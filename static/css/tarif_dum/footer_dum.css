@@ -32,6 +32,7 @@ footer {
     justify-content: space-between;
     padding-top: 134px;
     align-items: center;
+    width: 95%;
 }
 
 .nav_footer {
@@ -98,6 +99,10 @@ footer {
         align-items: center;
         gap: 5px;
     }
+    .flex1 {
+
+    width: 100%;
+}
 }
 
 @media (max-width: 768px) {
