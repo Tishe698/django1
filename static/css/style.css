@@ -6,22 +6,24 @@
 }
 
 body {
-    background: url("../img/Портрет 3 1.png");
-    background-repeat: no-repeat;
+
 }
 
 .conteiner_section1 {
     width: 556px;
     max-width: 100%;
-    min-height: 70vh;
+    min-height: auto;
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 3vw;
 
 }
 
 .section1 {
-
-
+    background: url("../img/Портрет 3 1.png");
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
 }
 
 .block_sozdaem_saity {
@@ -135,7 +137,7 @@ body {
     width: 73.671%;
     margin: 0 auto;
     margin-top: 3%;
-    min-height: 100vh;
+    min-height: auto;
     padding-bottom: 3%;
 }
 
@@ -227,7 +229,6 @@ body {
 @media (min-width: 1701px) {
 
     .conteiner_section1 {
-        min-height: 50vh;
         display: flex;
         justify-content: center;
     }

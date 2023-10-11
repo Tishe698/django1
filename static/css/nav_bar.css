@@ -190,6 +190,7 @@ header {
     padding-left: 5px;
     top: 10px;
     -webkit-tap-highlight-color: transparent;
+    z-index: 1;
 }
 
 .logo img {
