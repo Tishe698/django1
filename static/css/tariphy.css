@@ -206,7 +206,7 @@
 
 .individ_paket {
     height: auto;
-
+    background: white;
 }
 
 .podrobnee_praisom {
@@ -290,7 +290,9 @@
     .cena_tariphy {
         font-size: 1.4vw;
     }
-
+.individ_paket{
+    height: auto;
+}
     .cvet_tarifa {
         height: 28vw;
     }
