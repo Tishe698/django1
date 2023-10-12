@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
 .required {
     color: red;
 }
+
 .krestik {
     position: absolute;
     top: 10px;
@@ -15,8 +17,9 @@
     color: black;
     font-weight: bold;
 }
+
 .popup-form {
-display: block;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,13 +34,14 @@ display: block;
 }
 
 .popup-form.active {
-    height: 100%; /* Изменено с "display: block" */
+    height: 100%;
     opacity: 1;
     visibility: visible;
 }
-.container_forma {
+
+.container_vtoray_forma {
     min-height: 100vh;
-    width: 938px;
+    width: 500px;
     margin: 0 auto;
     max-width: 100%;
     margin-top: 10px;
@@ -48,7 +52,7 @@ display: block;
     padding: 0 46px;
     border-radius: 0.9375rem;
     border: 2px solid #2E363E;
-        background: #F2F6FA;
+    background: #F2F6FA;
     position: relative;
 }
 
@@ -79,17 +83,14 @@ display: block;
     font-size: 14px;
     padding: 20px;
     border-radius: 50px;
-    cursor: pointer; /* Добавляем указатель при наведении */
-    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .chto_delaem_spisok li:not(.selected) {
-    background-color: white; /* Set the background color for unselected items */
+    background-color: white;
 }
 
-/* Стиль для выбранного элемента */
-/* Стиль для кнопки отправки */
 button[type="submit"] {
     display: block;
     margin: 20px auto;
@@ -106,28 +107,20 @@ button[type="submit"] {
     background-color: #5CD6D6;
 }
 
-.chto_delaem {
-    font-size: 24px;
-    font-weight: 600;
-    width: 428px;
-    max-width: 100%;
-    padding: 10px 0;
-}
-
 .kontakty_forma {
     display: flex;
+    flex-direction: column;
     padding-top: 7%;
     gap: 10%;
-
 }
 
 .vvod_dannyh {
-    width: 326px;
+    width: 289px;
     max-width: 100%;
     min-height: 50px;
     height: auto;
-    border: none; /* Remove the default border */
-    border-bottom: 1px solid #000; /* Add a bottom border with the desired color */
+    border: none;
+    border-bottom: 1px solid #000;
     background: none;
     outline: none;
 }
@@ -155,7 +148,6 @@ button[type="submit"] {
     padding-bottom: 20px;
 }
 
-
 @media (max-width: 934px) {
     .chto_delaem_spisok ul {
         text-align: center;
@@ -174,5 +166,4 @@ button[type="submit"] {
     .width_telepon {
         width: 326px;
     }
-
 }

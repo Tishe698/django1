@@ -1,0 +1,45 @@
+<div id="popupForm2" class="popup-form">
+    <!-- Close button -->
+    <form method="POST" action="{% url 'send_to_telegram' %}" id="myForm">
+        {% csrf_token %}
+        <div class="container_vtoray_forma">
+            <div class="container_forma_razmer">
+                <div class="krestik">✕</div>
+                <div class="davaite_proekt">
+                    Заказать обратный звонок
+                </div>
+                <div class="kontakty_forma">
+                    <div class="flex_vodim_kontakt">
+                        <div class="chto_delaem2 ">
+                            Ваше имя:
+                            <span class="required">*</span>
+                        </div>
+                        <div class="chto_delaem_spisok padding_vvoda">
+                            <input class="vvod_dannyh" type="text" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+                    </div>
+                    <div class="flex_vodim_kontakt">
+                        <div class="chto_delaem2">
+                            Номер телефона или Telegram ID
+                            <span class="required">*</span>
+                        </div>
+                        <div class="chto_delaem_spisok padding_vvoda">
+                            <input class="vvod_dannyh width_telepon" type="tel" name="phone"
+                                   placeholder="Введите ваш номер телефона"
+                                   required
+                                   oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                   maxlength="11">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_vodim_kontakt">
+                </div>
+                <button type="submit">Отправить</button>
+                <div class="soglasie_pers">
+                    Нажимая на кнопку “Отправить” вы даете согласие
+                    на обработку персональных данных
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
