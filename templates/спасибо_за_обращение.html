@@ -22,14 +22,30 @@
             именно для вас .
         </div>
         <a class="knopka_vernutsy_sait" href="{% url 'home' %}">Вернуться на сайт</a>
-
+        <div id="countdown" class="countdown"></div>
 
     </div>
 </div>
+
+
 <script>
-    setTimeout(function () {
-        window.location.href = "{% url 'home' %}";
-    }, 5000); // 3000 миллисекунд (3 секунды)
+    var seconds = 14; // начальное количество секунд
+
+    function updateCountdown() {
+        var countdownElement = document.getElementById('countdown');
+        countdownElement.innerText = "Через " + seconds + " секунд вы автоматически будете перенаправленны на главную страницу";
+
+        if (seconds <= 0) {
+            // Перенаправление на главную страницу после завершения счетчика
+            window.location.href = "{% url 'home' %}";
+        } else {
+            seconds--;
+            setTimeout(updateCountdown, 1000); // обновляем счетчик каждую секунду (1000 миллисекунд)
+        }
+    }
+
+    // Запускаем функцию обратного отсчета после загрузки страницы
+    window.addEventListener('load', updateCountdown);
 </script>
 </body>
 </html>
