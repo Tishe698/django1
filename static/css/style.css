@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .block_sozdaem_saity {
@@ -324,6 +325,10 @@ body {
 
     .conteiner_section1 {
         min-height: 70vh;
+    }
+
+    .conteiner_section1 {
+        padding: 10vh 20px;
     }
 }
 
