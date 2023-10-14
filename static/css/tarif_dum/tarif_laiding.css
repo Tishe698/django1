@@ -4,12 +4,24 @@
     margin: 0;
     font-family: Montserrat;
 }
+.pimery_nekotor{
+font-weight: 300;
+    font-size: 23px;
+    line-height: 150%;
+    letter-spacing: 0.05813rem;
+    color: #585858;
+    margin-top: 20px;
+    width: 824px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
 
 .container_dum {
     background: url(../tarif_dum/img/landing.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: auto;
+    background-attachment: fixed;
 }
 
 footer.landing {

@@ -321,6 +321,10 @@ body {
     .container {
         grid-template-columns: repeat(1, minmax(205px, 1fr));
     }
+
+    .conteiner_section1 {
+        min-height: 70vh;
+    }
 }
 
 @media (max-width: 456px) {

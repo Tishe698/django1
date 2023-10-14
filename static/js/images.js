@@ -1,26 +1,19 @@
-var imageClicks = document.querySelectorAll(".image-click");
-var plusIcons = document.querySelectorAll(".plus-icon");
-var modals = document.querySelectorAll(".image-modal");
+const buttons = document.querySelectorAll('.project');
+const overlay = document.querySelector('.overlay');
+const overlayImage = document.querySelector('.overlay__inner img');
 
-imageClicks.forEach(function (imageClick, index) {
-    var modal = modals[index];
-    var plusIcon = plusIcons[index];
+function open(e) {
+  overlay.classList.add('open');
+  const src= e.currentTarget.querySelector('img').src;
+  overlayImage.src = src;
+}
 
-    // Обработчик события для изображения
-    imageClick.addEventListener("click", function () {
-        modal.style.display = "block";
-        plusIcon.style.display = "none"; // Скрыть плюсик при клике на изображение
-    });
+function close_dum() {
+  overlay.classList.remove('open');
+}
 
-    // Обработчик события для плюсика
-    plusIcon.addEventListener("click", function () {
-        modal.style.display = "block";
-        plusIcon.style.display = "none"; // Скрыть плюсик при клике на плюсик
-    });
+buttons.forEach(button => button.addEventListener('click', open));
+overlay.addEventListener('click', close_dum);
 
-    // Обработчик события для закрытия модального окна
-    modal.addEventListener("click", function () {
-        modal.style.display = "none";
-        plusIcon.style.display = "block"; // Показать плюсик после закрытия модального окна
-    });
-});
+
+
