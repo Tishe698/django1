@@ -20,11 +20,9 @@ body {
 }
 
 .section1 {
-    background: url("../img/Портрет 3 1.png");
-    background-repeat: no-repeat;
+    background: url("../img/Портрет 3 1.png"),no-repeat fixed;
     height: auto;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .block_sozdaem_saity {
