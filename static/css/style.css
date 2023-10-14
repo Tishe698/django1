@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     height: auto;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .block_sozdaem_saity {
