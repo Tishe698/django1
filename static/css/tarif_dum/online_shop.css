@@ -45,7 +45,7 @@ footer {
 
 .kluch_kompanent_zagolov {
     color: #585858;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -156,14 +156,14 @@ footer {
 .block1_belyi {
     width: 77%;
     margin: 0 auto;
-    padding-top: 79px;
 }
 
 .zagolovok_belogo_blocka {
     color: #585858;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
+    padding-top: 25px;
 }
 
 .flex_belog_blocka {
@@ -195,7 +195,11 @@ footer {
     margin: 0 auto;
 
 }
-
+.fon_onalainshop{
+    background: url(../tarif_dum/img/shop/корзинкафон.png)no-repeat;
+    background-size: contain;
+    background-position: right;
+}
 .sprava_shop {
 
 }

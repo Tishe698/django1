@@ -188,7 +188,7 @@ button {
 
 @media (min-width: 1143px) {
     #portfolio {
-        width: 91vw;
+        width: 88vw;
         padding: 3vw 0;
         grid-template-columns: repeat(3, minmax(157px, 0.28fr));
     }
