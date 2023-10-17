@@ -9,6 +9,24 @@ button {
     cursor: pointer;
 }
 
+.huchy_sait_knopka {
+    padding: 30px;
+    text-align: center;
+    background-color: #2E363E;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
 .project h1 {
     position: absolute;
     text-align: center;
@@ -191,6 +209,24 @@ button {
         box-shadow: 0 0 6px 2px #aea5a5;
     }
 
+    .huchy_sait_knopka {
+        padding: 2vw;
+        text-align: center;
+        background-color: #2E363E;
+        display: flex;
+        align-items: center;
+        height: 2vw;
+        justify-content: center;
+        width: 12vw;
+        font-size: 1.2vw;
+        color: white;
+        margin: 0 auto;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+        font-family: 'Montserrat';
+        cursor: pointer;
+    }
+
 }
 
 @media (max-width: 1142px) {
@@ -225,10 +261,11 @@ button {
 }
 
 @media (max-width: 790px) {
-.close_dum {
+    .close_dum {
 
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
+
     #portfolio {
         display: flex;
         flex-direction: column;
