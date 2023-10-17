@@ -137,8 +137,8 @@ button {
 .overlay__inner {
     background: #ffffff;
     width: 700px;
-    max-height: 80vh; /* Установите максимальную высоту в зависимости от ваших предпочтений */
-    padding: 20px;
+    max-height: 90vh; /* Установите максимальную высоту в зависимости от ваших предпочтений */
+    padding: 2vw;
     position: relative;
     opacity: 1;
     overflow-y: auto; /* Включите вертикальную прокрутку */
@@ -158,6 +158,7 @@ button {
     border: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 1vw;
 }
 
 .close_dum:hover {
@@ -175,7 +176,7 @@ button {
     }
 
     .overlay__inner {
-        width: 40vw;
+        width: 72vw;
     }
 
     .project img {
@@ -200,7 +201,7 @@ button {
     }
 
     .overlay__inner {
-        width: 40vw;
+        width: 72vw;
     }
 
     .project img {
@@ -224,7 +225,10 @@ button {
 }
 
 @media (max-width: 790px) {
+.close_dum {
 
+    font-size: 10px;
+}
     #portfolio {
         display: flex;
         flex-direction: column;
@@ -244,7 +248,9 @@ button {
     }
 
     .overlay__inner {
-        max-width: 96vw;
-        padding: 9vw 9vw;
+        max-width: 100vw;
+        padding: 9vw 4vw;
+        width: 100%;
     }
+
 }
