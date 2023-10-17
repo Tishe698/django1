@@ -4,8 +4,9 @@
     margin: 0;
     font-family: Montserrat;
 }
-.pimery_nekotor{
-font-weight: 300;
+
+.pimery_nekotor {
+    font-weight: 300;
     font-size: 23px;
     line-height: 150%;
     letter-spacing: 0.05813rem;
@@ -177,6 +178,10 @@ footer.landing {
 }
 
 @media (min-width: 1701px) {
+    .pimery_nekotor {
+        font-size: 1.5vw;
+
+    }
 
     .moshno_oruzh {
         font-size: 3vw;

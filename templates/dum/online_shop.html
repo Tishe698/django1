@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/tarif_dum/online_shop.css' %}">
     <link rel="stylesheet" href="{% static 'css/tarif_dum/footer_dum.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tarif_dum/images.css' %}">
 </head>
 <body>
 <div class="container_dum">
@@ -103,7 +104,10 @@
                 новых клиентов.
             </div>
         </div>
-
+        <div class="pimery_nekotor">
+            Примеры Интернет Магазинов:
+        </div>
+        {% include 'dum/images2.html' %}
     </div>
 </div>
 {% include 'dum/footer_dum.html' %}

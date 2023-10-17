@@ -3,7 +3,7 @@ from asgiref.sync import async_to_sync
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.shortcuts import render
-from .models import Image
+from .models import Image,Image2,Image3
 
 # Create your views here.
 def index(req):
@@ -21,9 +21,17 @@ def landing(req):
     }
     return render(req, 'dum/tarif_laiding.html', context)
 def korparativ(req):
-    return render(req, 'dum/tarif_korparativ_sait.html')
+    images = Image2.objects.all()
+    context = {
+        'images': images,
+    }
+    return render(req, 'dum/tarif_korparativ_sait.html',context)
 def online_shop(req):
-    return render(req, 'dum/online_shop.html')
+    images = Image3.objects.all()
+    context = {
+        'images': images,
+    }
+    return render(req, 'dum/online_shop.html',context)
 
 # Ваше_приложение/views.py
 

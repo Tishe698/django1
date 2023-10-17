@@ -1,28 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+
 body {
-  font-family: 'Inconsolata', monospace;
-  margin: 0;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
 }
+
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
+
+.project h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #585858;
+    bottom: 3vw;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+    height: 2vw;
+    font-weight: 400;
+}
+
+.project .grid__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    z-index: 3;
+    text-transform: uppercase;
+    color: #474545;
+    letter-spacing: 2px;
+}
+
 #portfolio {
-  width: 100%;
-  min-height: 100vh;
-  background: #ffffff;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 2px;
+    width: 1000px;
+    /* max-width: 100%; */
+    min-height: auto;
+    background: #ffffff;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(157px, 0.34fr));
+    /* grid-template-rows: 3fr 3fr; */
+    grid-gap: 20px;
+    /* margin: 0 auto; */
+    justify-items: center;
+    padding: 3vw 0;
 }
+
 .project {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    height: 365px;
+    width: 309px;
 }
+
 .project img {
-  position: absolute;
+    position: absolute;
+    width: 312px;
+    height: 366px;
 }
+
 .project p {
     position: absolute;
     text-align: center;
@@ -31,88 +71,180 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.project .grid__title {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  bottom: 0;
-  font-weight: 100;
-  font-size: 0.8em;
-  z-index: 3;
-  text-transform: uppercase;
-  color: #474545;
-  letter-spacing: 2px;
-}
+
 .project:hover .grid__overlay {
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
+
 .grid__overlay {
-  background: rgba(229, 182, 177, 0.9);
-  height: 100%;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  transform: translateY(101%);
-  transition: all 0.3s ease-in-out;
+    background: rgba(217, 217, 217, 0.50);
+    height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(101%);
+    transition: all 0.3s ease-in-out;
 }
+
 .grid__overlay button {
-  background: none;
-  outline: none;
-  font-weight: 100;
-  letter-spacing: 2px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 10px;
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: rgba(78, 77, 77, 1);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    background-color: white;
 }
+
 .grid__overlay button:hover {
-  transition: all 0.3s ease-in-out;
-  background: #ffffff;
-  color: #D1A39E;
-  transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+    color: black;
+    transform: scale(1.15);
 }
+
 .overlay {
-  position: fixed;
-  background: rgba(71, 69, 69, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  z-index: 3;
+    position: fixed;
+    background: rgba(71, 69, 69, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
 }
+
 .overlay.open {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  overflow-y: scroll; /* Добавьте вертикальную прокрутку для всего модального окна, если оно не вмещается на экран */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow-y: scroll; /* Добавьте вертикальную прокрутку для всего модального окна, если оно не вмещается на экран */
 }
+
 .overlay__inner {
-  background: #ffffff;
-  width: 700px;
-  max-height: 80vh; /* Установите максимальную высоту в зависимости от ваших предпочтений */
-  padding: 20px;
-  position: relative;
-  opacity: 1;
-  overflow-y: auto; /* Включите вертикальную прокрутку */
+    background: #ffffff;
+    width: 700px;
+    max-height: 80vh; /* Установите максимальную высоту в зависимости от ваших предпочтений */
+    padding: 20px;
+    position: relative;
+    opacity: 1;
+    overflow-y: auto; /* Включите вертикальную прокрутку */
 }
+
+.overlay__inner img {
+    width: 100%;
+}
+
 .close_dum {
-  position: absolute;
-  top: 3px;
-  right: 10px;
-  background: none;
-  outline: 0;
-  color: #474545;
-  border: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background: none;
+    outline: 0;
+    color: #474545;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
 .close_dum:hover {
-  color: #D1A39E;
+    color: #D1A39E;
 }
+
 .project__image {
+}
+
+@media (min-width: 1143px) {
+    #portfolio {
+        width: 91vw;
+        padding: 3vw 0;
+        grid-template-columns: repeat(3, minmax(157px, 0.28fr));
+    }
+
+    .overlay__inner {
+        width: 40vw;
+    }
+
+    .project img {
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+    }
+
+    .project {
+        height: 32vw;
+        width: 23vw;
+        box-shadow: 0 0 6px 2px #aea5a5;
+    }
+
+}
+
+@media (max-width: 1142px) {
+    #portfolio {
+        width: 100%;
+        padding: 3vw 0;
+        grid-template-columns: repeat(2, minmax(228px, 0.7fr));
+    }
+
+    .overlay__inner {
+        width: 40vw;
+    }
+
+    .project img {
+        width: 100%;
+        height: 289px;
+        object-fit: cover;
+    }
+
+    .project {
+        height: 365px;
+        width: 300px;
+        box-shadow: 0 0 6px 2px #aea5a5;
+    }
+
+    .project h1 {
+        bottom: 6%;
+        font-size: 15px;
+        height: 33px;
+
+    }
+}
+
+@media (max-width: 790px) {
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .project {
+        max-width: 100%;
+        box-shadow: 0 0 6px 2px #aea5a5;
+
+
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+    .overlay__inner {
+        max-width: 96vw;
+        padding: 9vw 9vw;
+    }
 }

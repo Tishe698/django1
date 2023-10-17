@@ -5,6 +5,18 @@
     font-family: Montserrat;
 }
 
+.pimery_nekotor {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 150%;
+    letter-spacing: 0.05813rem;
+    color: #585858;
+    margin-top: 20px;
+    width: 824px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
 .glavn_str_shop {
     display: none;
 }
@@ -200,6 +212,10 @@ footer {
 }
 
 @media (min-width: 1701px) {
+.pimery_nekotor {
+    font-size: 1.5vw;
+
+}
 
     .kluch_kompanent_zagolov {
         font-size: 1.5VW;
@@ -293,7 +309,7 @@ footer {
         background: url("../tarif_dum/img/shop/footershop.png");
         background-repeat: no-repeat;
         background-size: cover;
-            background-position: center;
+        background-position: center;
     }
 
     .karinka_belog_block img {
